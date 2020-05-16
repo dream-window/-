@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>宠物故事</title>
+
+	<style>
+		<!--
+		     body{
+			/*背景图垂直且水平居中*/
+			background-position: center center;
+			/*当内容高度大于图片高度时，背景图像相对固定*/
+			background-attachment: fixed;
+			/*背景图不平铺*/
+			background-repeat: no-repeat;
+			/*让背景图基于容器大小收缩*/
+			background-size:cover;
+			width:100%;height:100%;
+		}
+			a{
+				text-decoration: none;
+				color:#494F37;
+				font-size:20px
+		}
+			/*后面的编写中记得设计字体颜色，大小这些，不用系统自带*/
+/*
+			.first ul li{
+				float:left;
+				list-style: none;
+				width:110px
+		}
+			.first{
+				width:100%;
+				margin:0;
+				background-color: #8BABE3;
+				padding: 20px
+		}
+			.second{
+				width:100%;
+				background-color: #F0CCD6;
+				padding:10px;
+				text-align: center
+		}
+*/
+			.footer{ 
+				background-color:#059996;
+				color:white;
+				clear:both;
+				width:100%;
+				margin: auto;
+				text-align:center;
+				padding:5px;/* 内边距5像素 */
+			}
+		
+		.title{background-color: #B1BC70;
+				width: 30%;
+				height: 100px;
+				text-align: center;
+				color: #A571B6;
+				padding-top: 20px;
+				letter-spacing: 10px;
+				margin-left: auto;
+				margin-right: auto
+		}
+		.text{text-align: center;
+			font-family: kaiti;
+			font-size: 25px;
+			color: #4667B8;
+			padding:center;
+			text-indent: 2em;
+			line-height: 35px
+		}
+		.last{text-align: left}
+		/* 先重置一下html，消除HTML标签默认的内外边距 */
+		*{
+			padding: 0;
+			margin: 0;
+		}  
+        .wrap{
+		/* 对导航的内容设置一个主体为100%的宽并使其居中 */
+			width: 100%;
+			margin: 0 auto;
+		}   
+        .clear{
+			/* 清除浮动 */
+			clear: both;
+		} 
+        a{
+			color:black;
+			font-size:18px;
+			/* 去掉默认a标签的下划线 */
+			text-decoration-line: none;
+		} 
+		a:hover{
+			color:#F78181;
+		}
+	    ul,li{
+			list-style: none;
+		}
+         nav .level>li{
+			 float: left;
+			 width: 16.66%;
+			 text-align: center;
+			 background:#F0BFBF;
+			 padding: 15px 0;
+			 font-size: 16px;
+			 transition: .4s;
+		}
+        nav .level>li a{
+			color: black;
+		}
+        nav .level>li:hover{
+			/* 设置鼠标滑过后的样式 */
+			background:#FAF4F4;
+		}  
+        nav .two{
+			/* 先使二级菜单的内容隐藏 */
+			display: none;
+			margin-top: 10px;
+		}  
+        nav .level>li:hover .two{
+			/* 鼠标滑过一级菜单后的显示二级菜单 */
+			display: block;
+		}   
+        nav .two li{
+			padding: 5px 0;
+			transition: .4s;
+			cursor: pointer;
+		}
+        nav .two li:hover{
+			background:#F5ECD2;
+		}
+		nav .two li:hover a{
+			font-size:15px;
+		}
+		header{
+			/*标题*/
+		    padding: 30px;
+			margin:0 auto;
+			text-align: center;
+			background-color:#059996;
+			color:#FCF5F5 ;
+		}
+		-->
+	</style>
+</head>
+	
+<body background="img1.jpg">
+	<header>
+			  <h1>宠物之家</h1>
+		      <img src="logo.png" alt="宠物之家logo" title="宠物之家logo" width="110" height="80">
+   </header>
+    <nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="A首页.html" target="_blank">首页</a></li>
+                <li>
+                    <a href="宠物品种.html">宠物品种</a>
+                    <ul class="two">
+                        <li><a href="宠物品种.html">全部</a></li>
+                        <li><a href="宠物品种犬类.html">犬类</a></li>
+                        <li><a href="宠物品种猫科.html">猫科</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="喂养冷知识.html" target="_blank">喂养冷知识</a>
+                    <ul class="two">
+                        <li><a href="犬类冷知识.html" target="_blank">犬类</a></li>
+                        <li><a href="猫咪冷知识.html" target="_blank">喵咪</a></li>
+                        <li><a href="其他冷知识.html" target="_blank">其他</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="宠物故事主页面.html">萌宠趣闻</a>
+                    <ul class="two">
+                        <li><a href="宠物故事主页面.html" target="_blank">宠物故事</a></li>
+                        <li><a href="搞笑图片第一章.html" target="_blank">搞笑图片</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="救助热线.html">流浪动物</a>
+                    <ul class="two">
+                        <li><a href="救助热线.html" target="_blank">救助热线</a></li>
+                        <li><a href="联系我们.html" target="_blank">联系我们</a></li>
+                    </ul>
+                </li>
+                <li><a href="自制宠粮.html" target="_blank">自制宠粮</a></li>
+            </ul>
+        </div>
+    </nav>
+	<hr>
+	<br><br><br><br><br><br>
+	<div class="title">
+		<h1>宠物故事</h1>
+		<br>
+		<h6>The story of the pet</h6>
+	</div>
+	<hr style="width: 50%;margin-left: auto;margin-right: auto">
+	<br>
+	<br>
+	<br>
+	<div class="text">
+		<h2>九江义犬舍身尝剧毒狗肉,百人送葬</h2>
+		<br>
+		<img src="img46.png" alt="狗狗图片">
+		<p style="text-align: left">
+		 2006年清明节前夕，在九江市贺家山陵园一座墓前，立起了一尊狗的雕像。虽然离清明节还有些时日，但每天都有不少人来到墓前，或献上花篮，或奉上祭品，默默哀悼……不知内情的人，还以为坟墓里安葬的是一位德高望重的长者。而实际上，这里安葬的是一条义犬。 
+		</p>
+		<p style="text-align: left">
+		三年前，人们为它专门修建了坟墓；三年后，人们又为它雕刻了石像。这条狗到底做过什么，赢得了人们如此的尊重？ 
+		</p>
+		<p style="text-align: left">
+		舍身尝毒救了30余人！
+		</p>
+		<p style="text-align: left">
+		“如果不是赛虎以身试毒，阻止了我们吃有毒的狗肉，后果真是不堪设想啊！”回忆起三年前发生在九江市林业驾校那一幕，刘师傅还心有余悸。 
+		</p>
+		<p style="text-align: left">
+		 2003年11月28日下午，刘师傅在菜市场买了一条已经死了的狗带回驾校，食堂的厨师炖了一锅狗肉，准备晚餐时给30多位职工改善生活。肉香四溢，把一群刚出生的小狗崽们引到了食堂。一位职工看见狗崽来了，就夹了一块肉给它们吃。忽然，狗妈妈赛虎突然冲过来，用双爪紧紧地护住地上的肉，一改往日对“儿女”们的慈祥，对着小狗崽们发出凶狠急促的吼叫，不让它们吃。一条小狗试图走近妈妈撒娇，被赛虎一掌掀出门外，其他的狗崽儿见状四散逃跑。 
+		</p>
+		<p style="text-align: left">
+		  小狗崽们离开了，赛虎对着地上的狗肉又连叫了几声，但几十个职工丝毫没有理会，继续准备吃狗肉。见众人没有反映，赛虎显得有些急躁，来回绕圈子，对着锅里的肉继续吼叫。职工们以为赛虎想多要点肉，就又夹了几块给它，但赛虎将肉拢在爪子下后，还是不吃，仍一个劲地吠。于是，大家就懒得理它了。 
+		</p>
+		<p style="text-align: left">
+		 赛虎见食堂里的人越来越多，而且都聚在锅边等着吃肉，开始对着锅拼命狂吠，声音一阵比一阵大，一次比一次凄厉。见众人还是没有反应，赛虎猛地从地上跳起来，发出绵长而凄凉的呜咽声。听到***哀嚎，四只小狗崽儿冲了进来。赛虎用湿润的鼻子挨个儿亲吻着每只狗崽儿，伸出粉红的长舌舔净最小一只幼犬身上的污垢，然后泪水长流。但紧接着，赛虎就冲到最前面的人群里，用头撞击人们的大腿，可人们还是不能领会它的意思。 
+		</p>
+		<p style="text-align: left">
+		  突然，赛虎坐在地上，一边流眼泪，一边凄惨哀叫。长嚎一声后，赛虎将地上的三块狗肉吃掉了……不到十分钟，赛虎就在地上痛苦地翻滚、抽搐，然后七窍流血，含泪毙命。 
+		</p>
+		<p style="text-align: left">
+		 见此情景，几十名等待吃狗肉的职工都惊呆了！锅内狗肉竟然有毒！ 
+		</p>
+		<p style="text-align: left">
+		事后，经卫生防*部门化验，食堂所炖狗肉竟含有“毒鼠强”，含量足以杀死一头壮牛。因为赛虎，30多人的生命才得以获救。“我以前常听义犬救人的故事，以为那不过是传说，但这样的事竟然发生在我自己身上。”三年过去了，刘师傅依旧万分感慨：“死狗是我买来的，如果出了事，我是怎么也脱不了干系的啊，是赛虎救了大家。” 
+		</p>
+		<p style="text-align: left">
+		 陵园立碑移葬义犬 
+		</p>
+		<p style="text-align: left">
+		 赛虎死后，其主人付文启夫妇很悲痛，他们含泪把赛虎葬于自家的菜园里。九江市贺家山陵园总经理张宁抗听说赛虎舍己救人的壮举后非常感动，他找到付文启夫妇，表示想把赛虎移葬到贺家山陵园去。 
+		</p>
+		<p style="text-align: left">
+		  付文启夫妇很惊讶：“你这么抬举我们家赛虎，我们很感激你。但陵园是葬人的地方，怎么能葬狗呢？”张宁抗却认为：“天地万物，终归一死，能留下的只有精神，难道赛虎舍己救人的精神不足以令我们所有的人钦佩吗？” 
+		</p>
+		<p style="text-align: left">
+		  随后，张宁抗斥资一万余元，专门请人为赛虎选墓址、做棺材、刻碑文。2003年12月10日，张宁抗请了四个工人，开着两辆汽车去为赛虎移葬。 
+		</p>
+		<p style="text-align: left">
+		  “那天，有一百多人冒雨自发为赛虎送行，一些被救的人甚至泪流满面，几十挂鞭炮一齐鸣放，那场面真是动人啊！”回忆起赛虎的葬礼，刘师傅的声音又有些哽咽了！ 
+		</p>
+		
+	</div>
+	<br>
+	<hr>
+		<div class="last">
+			
+			<a href="宠物故事第四个.html">上一页</a>
+			&nbsp;
+			<a href="宠物故事第一个.html">1</a>
+			&nbsp;
+			<a href="宠物故事第二个.html">2</a>
+			&nbsp;
+			<a href="宠物故事第三个.html">3</a>
+			&nbsp;
+			<a href="宠物故事第四个.html">4</a>
+			&nbsp;
+			<a href="宠物故事第五个.html">5</a>
+			&nbsp;
+			<a href="宠物故事第六个.html">6</a>
+			&nbsp;
+			<a href="宠物故事第七个.html">7</a>
+			&nbsp;
+			<a href="宠物故事第六个.html">下一页</a>
+			
+        </div>	
+	<br>
+    <section class="footer">
+		<h5>宠物之家有限公司  网址：www.pets.com 电话：0791111111 email：7******9@qq.com</h5>
+	</section>		
+	
+</body>
+</html>

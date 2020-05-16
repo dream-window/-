@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>宠物品种</title>
+	<style>
+		<!--
+		  body{
+			/*背景图垂直且水平居中*/
+			background-position: center center;
+			/*当内容高度大于图片高度时，背景图像相对固定*/
+			background-attachment: fixed;
+			/*背景图不平铺*/
+			background-repeat: no-repeat;
+			/*让背景图基于容器大小收缩*/
+			background-size:cover;
+			width:100%;height:100%;
+		}
+		header{
+			/*标题*/
+		    padding: 30px;
+			margin:0 auto;
+			text-align: center;
+			background-color:#059996;
+			color:#FCF5F5 ;
+		}
+		h1{
+			/*标题字体加大*/
+			font-size: 40px;
+		}
+		/* 先重置一下html，消除HTML标签默认的内外边距 */
+		*{
+			padding: 0;
+			margin: 0;
+		}  
+        .wrap{
+			/* 对导航的内容设置一个主体为100%的宽并使其居中 */
+			width: 100%;
+			margin: 0 auto;
+		}   
+        .clear{
+			/* 清除浮动 */
+			clear: both;
+		} 
+        a{
+			color:black;
+			font-size:18px;
+			/* 去掉默认a标签的下划线 */
+			text-decoration-line: none;
+		} 
+		a:hover{
+			color:#F78181;
+		}
+	    ul,li{
+			list-style: none;
+		}
+         nav .level>li{
+			 float: left;
+			 width: 16.66%;
+			 text-align: center;
+			 background:#F0BFBF;
+			 padding: 15px 0;
+			 font-size: 16px;
+			 transition: .4s;
+		}
+        nav .level>li a{
+			color: black;
+		}
+        nav .level>li:hover{
+			/* 设置鼠标滑过后的样式 */
+			background:#FAF4F4;
+		}  
+        nav .two{
+			/* 先使二级菜单的内容隐藏 */
+			display: none;
+			margin-top: 10px;
+		}  
+        nav .level>li:hover .two{
+			/* 鼠标滑过一级菜单后的显示二级菜单 */
+			display: block;
+		}   
+        nav .two li{
+			padding: 5px 0;
+			transition: .4s;
+			cursor: pointer;
+		}
+        nav .two li:hover{
+			background:#F5ECD2;
+		}
+		nav .two li:hover a{
+			font-size:15px;
+		}
+		.main{
+			margin-top:35px;
+		}
+		.top-main{
+			margin: 0 auto;
+			width:75%;
+		}
+		.top-right{
+			float: right;
+		}
+		.pet-list {
+			margin:0 auto;
+            width:75%;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+		.pet-s {
+            width:47.6%;
+            overflow: hidden;
+			height:360px;
+            border:2px solid #F4C6C7;
+            text-align: center;
+            padding-top: 5px;
+            float: left;
+            margin-right: 17px;
+            margin-bottom: 17px;
+        }
+		p{
+			text-align:left;
+			text-indent:2em;
+			font-size:17px;
+			color:#050000;
+			line-height:1.6;
+		}
+		h4{
+			background-color:#F3F2D3;
+		}
+		.con{
+			text-align: center;
+		}
+        .con a{
+           /*转换为内联块 才可以增加a标签的大小*/
+           display: inline-block;
+           /*14 12*/
+           padding: 7px 10px;
+           font-size: 12px;
+           /*把行高设置和文字一样 方便计算a标签的高度*/
+           line-height: 12px;
+           color: #030000;
+           text-decoration: none;
+		   text-align: center;
+        } 
+        .con a:hover{
+           color:#F78181;
+        }
+		.footer {
+			background-color:#059996;
+		    color:white;
+		    clear:both;
+			margin: auto;
+		    text-align:center;
+		    padding:30px;/* 内边距5像素 */
+		}
+		-->
+	</style>
+	
+</head>
+
+<body background="背景图5.jpg">
+	<header>
+			  <h1>宠物之家</h1>
+		      <img src="logo.png" alt="宠物之家logo" title="宠物之家logo" width="110" height="80">
+   </header>
+ <nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="A首页.html" target="_blank">首页</a></li>
+                <li>
+                    <a href="宠物品种.html">宠物品种</a>
+                    <ul class="two">
+                        <li><a href="宠物品种.html">全部</a></li>
+                        <li><a href="宠物品种犬类.html">犬类</a></li>
+                        <li><a href="宠物品种猫科.html">猫科</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="喂养冷知识.html" target="_blank">喂养冷知识</a>
+                    <ul class="two">
+                        <li><a href="犬类冷知识.html" target="_blank">犬类</a></li>
+                        <li><a href="猫咪冷知识.html" target="_blank">喵咪</a></li>
+                        <li><a href="其他冷知识.html" target="_blank">其他</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="宠物故事主页面.html" target="_blank">萌宠趣闻</a>
+                    <ul class="two">
+                        <li><a href="宠物故事主页面.html" target="_blank">宠物故事</a></li>
+                        <li><a href="搞笑图片第一章.html" target="_blank">搞笑图片</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="救助热线.html" target="_blank">流浪动物</a>
+                    <ul class="two">
+                        <li><a href="救助热线.html" target="_blank">救助热线</a></li>
+                        <li><a href="联系我们.html" target="_blank">联系我们</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="自制宠粮.html" target="_blank">自制宠粮</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	<br>
+	<br>
+	<div class="main">
+		<div class="top-main">
+				<div class="top-right">
+					<p>
+						<a href="宠物品种.html">全部&nbsp;&nbsp;</a>
+					    <a href="宠物品种犬类.html">&nbsp;犬类&nbsp;&nbsp;</a>
+					    <a href="宠物品种猫科.html">&nbsp;猫科&nbsp;&nbsp;</a>
+					    <a href="宠物品种鸟类.html">&nbsp;鸟类&nbsp;&nbsp;</a>
+					    <a href="宠物品种啮齿类.html">&nbsp;啮齿类&nbsp;&nbsp;</a>
+					    <a href="宠物品种鱼类.html">鱼类</a>
+					</p>
+				</div>
+		</div>
+	<br>
+	<br>
+	<div class="pet-list">
+		<div class="pet-s">
+			<img src="金鱼.jpg" alt="金鱼" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>金鱼(价格：10元左右）</h4><br>
+			<p>金鱼是中国比较具有代表性的观赏鱼品种，金鱼的品种有很多，颜色有红、橙、紫、蓝、墨、银白、五花等，比较常见的是金黄色。由于金鱼具有一定的观赏价值，而且它们的饲养难度也是不大的，因此深受鱼友的青睐。
+			</p>
+			<p>在金鱼的饲料中，必须具有营养丰富的蛋白质、脂肪、碳水化合物，各种维生素和一定量的无机盐类及微量元素等。每天喂足新鲜而活的红虫者，则鱼体生长发育特大，尤其是狮子头、水泡等特征(指肉瘤和水泡)更为发达。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="孔雀鱼.jpg" alt="孔雀鱼" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>孔雀鱼(价格：5-10元）</h4><br>
+			<p>孔雀鱼，听孔雀鱼的名字就知道这种鱼是非常漂亮，并且很优雅的。很多人喜欢这种有着迷人外表的鱼，饲养者同样会因为它的漂亮而赏心悦目。性格温和的孔雀鱼，平常也会好动，只是寿命较短。饲养孔雀鱼的水温要与热带鱼的水温相差无几，保持在22-26度之间即可。
+			</p>
+			<p>　孔雀鱼适应性很强，最适宜生长温度为22-24℃，喜微碱性水质，pH7.2-7.4，食性广，性情温和，活泼好动，能和其他热带鱼混养。孔雀鱼易养，但要获得体色艳丽，体形优美的鱼则从鱼苗期就需要宽大的水体，较多的水草，鲜活的饵料，适宜的水质等环境。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="鹦鹉鱼.jpg" alt="鹦鹉鱼" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>鹦鹉鱼(价格：10-100元）</h4><br>
+			<p>鹦鹉鱼是一种色彩比较鲜艳的热带观赏鱼，鹦鹉鱼体形近似球形或卵圆形，嘴型酷似鹦鹉嘴型。鹦鹉鱼的品种比较多，最常见的是体色鲜红的血鹦鹉。鹦鹉鱼对环境的适应能力是比较强的，是易饲养的观赏鱼品种，深受大众的喜爱。
+			</p>
+			<p>　鹦鹦鹉鱼是生活在珊瑚礁中的热带鱼类。每当涨潮的时候，大大小小的鹦鹉鱼披着绿莹莹、黄灿灿的外衣，从珊瑚礁外的斜坡的深水中游到浅水礁坪和泻湖中。鹦鹉鱼有特殊的消化系统。鹦鹉鱼用它们板齿状的喙将珊瑚虫连同它们的骨骼一同啃下来，再用咽喉齿磨碎珊瑚虫，然后吞入腹中。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="龙鱼.jpg" alt="龙鱼" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>龙鱼(价格：50-190元）</h4><br>
+			<p>龙鱼，又叫做古舌鱼科，这种鱼类在东南亚地区可是非常受欢迎的。对于龙鱼，它对水质的要求颇高，最好的温度就是24-29摄氏度，饲养过程中，不要水温有剧烈的差异。龙鱼的种类不同，它的颜色也不一。身体上的鳞片会因为年龄的增长而变得更加亮、厚。
+			</p>
+			<p>　龙鱼性格凶猛，以小鱼、青蛙、昆虫为食，生活水温要高，尤其繁殖期间，需保持27-28℃，亲鱼将卵含在口中孵化。骨舌鱼科的鱼类属热带狭温性鱼类，生活在上层水域，对生存环境的水质要求很高。具有较强的攻击性及领域意识，人工饲养中应注意尽量避免同种混养。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="神仙鱼.jpg" alt="神仙鱼" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>神仙鱼(价格：10-120元）</h4><br>
+			<p>神仙鱼，因为神仙鱼游动的时候仿佛燕子飞翔一样，它又被叫做燕鱼。五彩斑斓的鳞片显出了它高贵的气质，优美的遨游动作又显出高雅的美。它是水族爱好者最喜欢的鱼类之一，如果没有养过神仙鱼就不能被称作水族爱好者。
+			</p>
+			<p>神仙鱼比较敏感，非常容易受惊，鱼入缸后2天内不要喂，也别老开灯。过两三天喂些血虫，千万别喂线虫，线虫会有污染。神仙鱼需要宽大的水体，安静的环境，缸大水多，水质才好保持。鱼要多，少了鱼会孤单、打架，成群鱼不易生病。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="罗汉鱼.jpg" alt="罗汉鱼" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>罗汉鱼(价格：300-800元）</h4><br>
+			<p>罗汉鱼，头部的微微隆起，让罗汉鱼有了独特的外观。罗汉是一种令人过目不忘的鱼类品种，除了额头很明显之外，它还有艳丽的体色，给人类的视觉冲击很强。它的性格很奇怪，对鱼类都是十分的凶猛的，对人类却是充满了灵性，有人靠近鱼缸，它就会很亲切的游过去给予主人玩耍的感觉。
+			</p>
+			<p>罗汉除了威武雄壮的王者气势，艳丽夺目的动人色彩，具人性化的可爱外形以外，最令广大爱好者沉醉其中难以自拔的一点，就是他们与饲主之间的情意结。
+			</p>
+		</div>
+		<h3 style="text-align: center">
+			<a href="#top">back to top（第1页）</a>
+		</h3>
+		<br>
+		<div class="con">
+			<h3>
+			<a href="宠物品种鱼类.html">上一页</a>
+            <a href="宠物品种鱼类.html">1</a>
+            <a href="宠物品种鱼类.html">下一页</a>
+			</h3>
+        </div>	
+    </div>
+  </div>	
+	<br>
+    <section class="footer">
+			  <h5>宠物之家有限公司  网址：www.pets.com 电话：0791111111 email：7******9@qq.com
+			  </h5>
+	 </section>		
+</body>
+</html>

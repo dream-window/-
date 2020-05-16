@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+	<style>
+		<!--
+		.first{
+		    width:100%;
+			height:30px;
+		}
+	    .first_left{
+		    float:left;
+		    height:30px;
+		    width:30%;
+		    text-align: left;
+			margin-left: 50px;
+			margin-top: 10px;
+		}
+	    .first_right{
+			height: 30px;
+			width:30%;
+			float:right;
+			margin-top:5px;
+		}
+		h6{
+			color:#F4A9AB;
+			font-size:15px;
+		}
+		.first a{
+			/*取消超链接下划线*/
+			text-decoration:none;
+		}
+		h6:hover{
+			color:#3F4B44;
+		}
+		header{
+			/*标题*/
+		    padding: 30px;
+			margin:0 auto;
+			text-align: center;
+			background-color:#059996;
+			color:#FCF5F5 ;
+		}
+		h1{
+			/*标题字体加大*/
+			font-size: 40px;
+			text-align:center;
+		} 
+		/* 先重置一下html，消除HTML标签默认的内外边距 */
+		*{
+			padding: 0;
+			margin: 0;
+		}  
+        .wrap{
+			/* 对导航的内容设置一个主体为100%的宽并使其居中 */
+			width: 100%;
+			margin: 0 auto;
+		}   
+        .clear{
+			/* 清除浮动 */
+			clear: both;
+		} 
+        a{
+			font-size:18px;
+			/* 去掉默认a标签的下划线 */
+			text-decoration-line: none;
+		}   
+	    ul,li{
+			list-style: none;
+		}
+         nav .level>li{
+			 float: left;
+			 width: 16.66%;
+			 text-align: center;
+			 background:#F0BFBF;
+			 padding: 15px 0;
+			 font-size: 16px;
+			 transition: .4s;
+		}
+        nav .level>li a{
+			color: black;
+		}
+        nav .level>li:hover{
+			/* 设置鼠标滑过后的样式 */
+			background:#FAF4F4;
+		}  
+        nav .two{
+			/* 先使二级菜单的内容隐藏 */
+			display: none;
+			margin-top: 10px;
+		}  
+        nav .level>li:hover .two{
+			/* 鼠标滑过一级菜单后的显示二级菜单 */
+			display: block;
+		}   
+        nav .two li{
+			padding: 5px 0;
+			transition: .4s;
+			cursor: pointer;
+		}
+        nav .two li:hover{
+			background:#F5ECD2;
+		}
+		nav .two li:hover a{
+			font-size:15px;
+		}
+		* {
+              margin:0;
+            padding:0;
+        }
+ 
+        ul {
+              list-style:none;
+        }
+		.top{
+			margin:0 auto;
+			height:80px;
+		}
+        .loop{
+            position: relative;
+            margin:30px auto;
+            width:600px;
+            height:300px;
+        }
+ 
+        #wrap {
+			margin-top:60px;
+              position:relative;
+              width:600px;
+              height:400px;
+               border:1px solid #9cc5ef;
+               overflow:hidden;
+        }
+ 
+        #slider {
+              width:300%;
+              height:100%;
+              font:100px/400px Microsoft Yahei;
+              text-align:center;
+              color:#fff;
+              margin-left:0;
+              -webkit-animation:slide1 3s ease-out infinite;
+        }
+ 
+        #slider li {
+              float:left;
+              width:600px;
+              height:100%;
+        }
+        #slider img{
+             width:600px;
+             height:100%;
+        }
+        /*创建三种动画策略*/
+        @-webkit-keyframes slide1 {
+          0% { margin-left:0;}
+          23% { margin-left:0;}
+          33% { margin-left:-600px;}
+          56% { margin-left:-600px;}
+          66% { margin-left:-1200px;}
+          90% { margin-left:-1200px;}
+          100% {margin-left:0;}
+        }
+ 
+        @-webkit-keyframes slide2 {
+          0% { margin-left:-600px;}
+          23% { margin-left:-600px;}
+          33% { margin-left:-1200px;}
+          56% { margin-left:-1200px;}
+          66% { margin-left:0;}
+          90% { margin-left:0;}
+          100% {margin-left:-600px;}
+        }
+ 
+        @-webkit-keyframes slide3 {
+          0% { margin-left:-1200px;}
+          23% { margin-left:-1200px;}
+          33% { margin-left:0;}
+          56% { margin-left:0;}
+          66% { margin-left:-600px;}
+          90% { margin-left:-600px;}
+          100% {margin-left:-1200px;}
+        }
+ 
+ 
+        /*当我们点击对应按钮时显示对应的动画*/
+        #first:checked ~ #wrap #slider {
+          -webkit-animation-name:slide1;
+        }
+ 
+        #second:checked ~ #wrap #slider {
+          -webkit-animation-name:slide2;
+        }
+ 
+        #third:checked ~ #wrap #slider {
+          -webkit-animation-name:slide3;
+        }
+ 
+ 
+        /*短暂地取消动画名称，模拟重启动画*/
+        #first:active ~ #wrap #slider {
+          -webkit-animation-name:none;
+          margin-left:0;
+        }
+ 
+        #second:active ~ #wrap #slider {
+          -webkit-animation-name:none;
+          margin-left:-600px;
+        }
+ 
+        #third:active ~ #wrap #slider {
+          -webkit-animation-name:none;
+          margin-left:-1200px;
+        }
+        #opts {
+          width:600px;
+          height:40px;
+          margin:auto;
+          color:#fff;
+          text-align:center;
+          font:16px/30px Microsoft Yahei;
+          position: absolute;
+          top: 370px;
+          left: 250px;
+        }
+ 
+        #opts label {
+          float:left;
+          width:30px;
+          height:30px;
+          margin-right:10px;
+          background:#cccccc;
+          cursor:pointer;
+          border-radius: 50%;
+        }
+ 
+        #opts label:hover {
+          background:#405871;
+        }
+ 
+        /* 隐藏Input按钮*/
+        #first, #second, #third {
+          display:none;
+        }
+		.all{
+			width:1300px;
+			margin:0 auto;
+		}
+		.top-main{
+			width:100%;
+			text-align:center;
+			margin-top:140px;
+		}
+		h2{
+			font-size: 30px;
+			color:#F4999A;
+			letter-spacing: 12px;
+			text-align: center;
+		}
+		h3{
+			font-size: 20px;
+			color:#F4999A;
+			letter-spacing: 10px;
+			text-align: center;
+		}
+		h4{
+			text-align:center;
+			margin-top:4px;
+		}
+		.main{
+			width: 1200px;
+			margin: 0 auto;
+			height:480px;
+		}
+		.left{
+			float: left;
+			width:300px;
+			height:580px;
+			margin-left:50px;
+			margin-right:50px;
+		}
+		.middle{
+			float:left;
+			width:300px;
+			height:580px;
+			margin-left:50px;
+			margin-right:50px;
+		}
+		.right{
+			float: right;
+			width: 300px;
+			height:580px;
+			margin-left:50px;
+			margin-right:50px;
+		}
+		.contre{
+			width:1200px;
+			margin:0 auto;
+		}
+		article{
+			float: right;
+			width: 35%;
+			padding: 10px;
+			height: 80px;
+			color:#F8B8B9;
+			margin-right:50px;
+			margin-bottom: 50px;
+			letter-spacing:10px;
+		}
+		aside{
+			float: left;
+			width: 35%;
+			background-color:#F8B8B9;
+			color: white;
+			letter-spacing:10px;
+			padding: 5px;
+			height: 80px;
+			margin-left:50px;
+			margin-bottom: 50px;
+		}
+		.last{
+			margin:0 auto;
+			width:600px;
+			height:870px;
+		}
+		p{
+			letter-spacing:4px;
+			line-height:28px;
+			text-align:center;
+			font-size:17px;
+			color:#F4999A;
+		}
+		 a{
+			color:black;
+			font-size:18px;
+			/* 去掉默认a标签的下划线 */
+			text-decoration-line:none;
+		}
+		a:hover{
+			color:#ECA8A9;
+		}
+		.footer {
+			background-color:#059996;
+		    color:white;
+		    clear:both;
+			margin: auto;
+		    text-align:center;
+		    padding:30px;/* 内边距5像素 */
+		}
+		-->
+		</style>
+</head>
+
+<body>
+	<div class="first">
+			<div class="first_left">
+				<a href="登录页面.html" target="_blank"><em><h6>登录账号</h6></em></a>
+			</div>	
+			<div class="first_right">
+				<div class="content_input">
+					<input type="search" class="search_field" placeholder="Go to a website">
+					<button class="search_btn">查询</button>     
+                </div>	
+		    </div>	
+	</div>
+	<header>
+			  <h1>宠物之家</h1>
+		      <img src="logo.png" alt="宠物之家logo" title="宠物之家logo" width="110" height="80">
+   </header>
+	  <nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="A首页.html">首页</a></li>
+                <li>
+                    <a href="宠物品种.html" target="_blank">宠物品种</a>
+                    <ul class="two">
+                        <li><a href="宠物品种.html" target="_blank">全部</a></li>
+                        <li><a href="宠物品种犬类.html" target="_blank">犬类</a></li>
+                        <li><a href="宠物品种猫科.html" target="_blank">猫科</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="喂养冷知识.html" target="_blank">喂养冷知识</a>
+                    <ul class="two">
+                        <li><a href="犬类冷知识.html" target="_blank">犬类</a></li>
+                        <li><a href="猫咪冷知识.html" target="_blank">猫科</a></li>
+                        <li><a href="其他冷知识.html" target="_blank">其他</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="宠物故事主页面.html" target="_blank">萌宠趣闻</a>
+                    <ul class="two">
+                        <li><a href="宠物故事主页面.html" target="_blank">宠物故事</a></li>
+                        <li><a href="搞笑图片第一章.html" target="_blank">搞笑图片</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="救助热线.html" target="_blank">流浪动物</a>
+                    <ul class="two">
+                        <li><a href="救助热线.html" target="_blank">救助热线</a></li>
+                        <li><a href="联系我们.html" target="_blank">联系我们</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="自制宠粮.html" target="_blank">自制宠粮</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	<br>
+	<div class="all">
+	<div class="top">
+		<h2><br><br>To best love to last you</h2>
+	</div>
+	    <div class="loop">
+            <input type="radio" name="slider" id="first">
+            <input type="radio" name="slider" id="second">
+            <input type="radio" name="slider" id="third">
+ 
+            <div id="wrap">
+              <ul id="slider">
+                <li><img src="宠物之家.jpg" alt="宠物之家"></li>
+                <li><img src="轮播狗.jpg" alt="柴犬"></li>
+                <li><img src="轮播猫.jpg" alt="橘猫"></li>
+              </ul>
+            </div> 
+			
+            <div id="opts">
+              <label for="first">1</label>
+              <label for="second">2</label>
+              <label for="third">3</label>
+            </div>
+		</div>
+	<div class="top-main">
+		<h2>“宠”爱</h2>
+		<br>
+		<h3>&nbsp;pet's love</h3>
+		<br>
+		<h3>&nbsp;你喜欢哪种宠物呢？</h3>
+		<br>
+		<h3>&nbsp;⬇（一起来看看吧）⬇</h3>
+	</div>
+	<br>
+	<br>
+	<div class="main">
+		<div class="left">
+			<a href="宠物品种.html" target="_blank">
+				<img src="褴褛猫.jpg" width="300" alt="褴褛猫" title="点击打开宠物介绍">
+			</a>
+			<h3><br>宠物介绍</h3>
+			<br>
+			<p><b>这里有最全面的萌宠介绍</b></p>
+			<p><b>为您的萌宠做个更好的科普栏目</b></p>
+		</div>
+		<div class="middle">
+			<a href="宠物故事主页面.html" target="_blank">
+				<img src="小葵花凤头鹦鹉.jpg" width="300" alt="小葵花凤头鹦鹉" title="点击打开萌宠趣闻">
+			</a>
+			<h3><br>萌宠趣闻</h3>
+			<br>
+			<p><b>这里也有最搞笑的萌宠趣闻</b></p>
+			<p><b>让您领略萌宠风采</b></p>
+		</div>
+		<div class="right">
+			<a href="喂养冷知识.html" target="_blank">
+				<img src="边境牧羊犬.jpg" width="300" alt="边境牧羊犬" title="点击打开喂养冷知识">
+			</a>
+			<h3><br>喂养冷知识</h3>
+			<br>
+			<p><b>这里有最权威的喂养冷知识科普</b></p>
+			<p><b>给您的宠最温馨最呵护的爱</b></p>
+		</div>
+	</div>
+	<div class="centre">
+		<aside>
+			<h1>Warm Days</h1>
+			<h4><b>温暖时光</b></h4>
+		</aside>
+		<article>
+			<h1>Everytime...</h1>
+		</article>
+	</div>
+	<div class="last">
+		<img src="龙猫.jpg" width="600" alt="龙猫" style="border-radius:90%">
+		<h2>爱宠</h2>
+		<br>
+		<h3>&nbsp;love pets</h3>
+		<br>
+		<h3>&nbsp;宠物无高低贵贱之分，唯爱与不爱之别。</h3>
+		<br>
+		<h3>&nbsp;（宠物之家给你最宠的爱）</h3>
+	</div>
+		<h3>
+		<br>
+	     <a href="#top">back to top</a>   
+		</h3>
+	    <br>
+	</div>
+	 <section class="footer">
+			  <h5>宠物之家有限公司  网址：www.pets.com 电话：0791111111 email：7******9@qq.com
+			  </h5>
+	 </section>
+
+</body>
+</html>

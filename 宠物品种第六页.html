@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>宠物品种</title>
+	<style>
+		<!--
+		  body{
+			/*背景图垂直且水平居中*/
+			background-position: center center;
+			/*当内容高度大于图片高度时，背景图像相对固定*/
+			background-attachment: fixed;
+			/*背景图不平铺*/
+			background-repeat: no-repeat;
+			/*让背景图基于容器大小收缩*/
+			background-size:cover;
+			width:100%;height:100%;
+		}
+		header{
+			/*标题*/
+		    padding: 30px;
+			margin:0 auto;
+			text-align: center;
+			background-color:#059996;
+			color:#FCF5F5 ;
+		}
+		h1{
+			/*标题字体加大*/
+			font-size: 40px;
+		}
+		/* 先重置一下html，消除HTML标签默认的内外边距 */
+		*{
+			padding: 0;
+			margin: 0;
+		}  
+        .wrap{
+			/* 对导航的内容设置一个主体为100%的宽并使其居中 */
+			width: 100%;
+			margin: 0 auto;
+		}   
+        .clear{
+			/* 清除浮动 */
+			clear: both;
+		} 
+        a{
+			color:black;
+			font-size:18px;
+			/* 去掉默认a标签的下划线 */
+			text-decoration-line: none;
+		} 
+		a:hover{
+			color:#F78181;
+		}
+	    ul,li{
+			list-style: none;
+		}
+         nav .level>li{
+			 float: left;
+			 width: 16.66%;
+			 text-align: center;
+			 background:#F0BFBF;
+			 padding: 15px 0;
+			 font-size: 16px;
+			 transition: .4s;
+		}
+        nav .level>li a{
+			color: black;
+		}
+        nav .level>li:hover{
+			/* 设置鼠标滑过后的样式 */
+			background:#FAF4F4;
+		}  
+        nav .two{
+			/* 先使二级菜单的内容隐藏 */
+			display: none;
+			margin-top: 10px;
+		}  
+        nav .level>li:hover .two{
+			/* 鼠标滑过一级菜单后的显示二级菜单 */
+			display: block;
+		}   
+        nav .two li{
+			padding: 5px 0;
+			transition: .4s;
+			cursor: pointer;
+		}
+        nav .two li:hover{
+			background:#F5ECD2;
+		}
+		nav .two li:hover a{
+			font-size:15px;
+		}
+		.main{
+			margin-top:35px;
+		}
+		.top-main{
+			margin: 0 auto;
+			width:75%;
+		}
+		.top-right{
+			float: right;
+		}
+		.pet-list {
+			margin:0 auto;
+            width:75%;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+		.pet-s {
+            width:47.6%;
+            overflow: hidden;
+			height:360px;
+            border:2px solid #F4C6C7;
+            text-align: center;
+            padding-top: 5px;
+            float: left;
+            margin-right: 17px;
+            margin-bottom: 17px;
+        }
+		p{
+			text-align:left;
+			text-indent:2em;
+			font-size:17px;
+			color:#050000;
+			line-height:1.6;
+		}
+		h4{
+			background-color:#F3F2D3;
+		}
+		.con{
+			text-align: center;
+		}
+        .con a{
+           /*转换为内联块 才可以增加a标签的大小*/
+           display: inline-block;
+           /*14 12*/
+           padding: 7px 10px;
+           font-size: 12px;
+           /*把行高设置和文字一样 方便计算a标签的高度*/
+           line-height: 12px;
+           color: #030000;
+           text-decoration: none;
+		   text-align: center;
+        } 
+        .con a:hover{
+           color:#F78181;
+        }
+		.footer {
+			background-color:#059996;
+		    color:white;
+		    clear:both;
+			margin: auto;
+		    text-align:center;
+		    padding:30px;/* 内边距5像素 */
+		}
+		-->
+	</style>
+	
+</head>
+
+<body background="背景图5.jpg">
+	<header>
+			  <h1>宠物之家</h1>
+		      <img src="logo.png" alt="宠物之家logo" title="宠物之家logo" width="110" height="80">
+   </header>
+ <nav>
+        <div class="wrap">
+            <ul class="level">
+                 <li><a href="A首页.html" target="_blank">首页</a></li>
+                <li>
+                    <a href="宠物品种.html">宠物品种</a>
+                    <ul class="two">
+                        <li><a href="宠物品种.html">全部</a></li>
+                        <li><a href="宠物品种犬类.html">犬类</a></li>
+                        <li><a href="宠物品种猫科.html">猫科</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="喂养冷知识.html" target="_blank">喂养冷知识</a>
+                    <ul class="two">
+                        <li><a href="犬类冷知识.html" target="_blank">犬类</a></li>
+                        <li><a href="猫咪冷知识.html" target="_blank">喵咪</a></li>
+                        <li><a href="其他冷知识.html" target="_blank">其他</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="宠物故事主页面.html" target="_blank">萌宠趣闻</a>
+                    <ul class="two">
+                        <li><a href="宠物故事主页面.html" target="_blank">宠物故事</a></li>
+                        <li><a href="搞笑图片第一章.html" target="_blank">搞笑图片</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="救助热线.html" target="_blank">流浪动物</a>
+                    <ul class="two">
+                        <li><a href="救助热线.html" target="_blank">救助热线</a></li>
+                        <li><a href="联系我们.html" target="_blank">联系我们</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="自制宠粮.html" target="_blank">自制宠粮</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	<br>
+	<br>
+	<div class="main">
+		<div class="top-main">
+				<div class="top-right">
+					<p>
+						<a href="宠物品种.html">全部&nbsp;&nbsp;</a>
+					    <a href="宠物品种犬类.html">&nbsp;犬类&nbsp;&nbsp;</a>
+					    <a href="宠物品种猫科.html">&nbsp;猫科&nbsp;&nbsp;</a>
+					    <a href="宠物品种鸟类.html">&nbsp;鸟类&nbsp;&nbsp;</a>
+					    <a href="宠物品种啮齿类.html">&nbsp;啮齿类&nbsp;&nbsp;</a>
+					    <a href="宠物品种鱼类.html">鱼类</a>
+					</p>
+				</div>
+		</div>
+	<br>
+	<br>
+	<div class="pet-list">
+	<div class="pet-s">
+			<img src="荷兰兔.jpg" alt="荷兰兔" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>荷兰兔(价格：100元左右）</h4><br>
+			<p>荷兰兔脸部有v字形的白色区块，延伸至下颔部位。体型小，耳朵也比较短，鼻子四周和脖子到前脚为白色，其他部分为黑色、蓝色、巧克力色、灰色、黄色(ARBA对黄色荷兰兔并不认可)、海龟绿和铜铁色等颜色搭配目前大概配出了十几种色彩。
+			</p>
+			<p>荷兰兔具有高度想象空间的模样，使它成为欧、美、澳洲，非常流行的宠物兔。荷兰兔脸部有V字形的白色区块，延伸至下颔部位。体型小，耳朵也比较 荷兰兔(10张)短，鼻子四周和脖子到前脚为白色，其他部分为黑色、蓝色、巧克力色、灰色、黄色、海龟绿和铜铁色等颜色搭配。
+			</p>
+		</div>
+	<div class="pet-s">
+			<img src="蓝点颏.jpg" alt="蓝点颏" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>蓝点颏(价格：600元左右）</h4><br>
+			<p>　蓝点颏的体形是较小的，在颈部上有蓝色的羽毛，上体主要是呈土褐色，雌雄蓝点颏外形十分相似，很难区分性别。蓝点颏主要是在于灌丛或芦苇丛中活动，是一种习性比较隐怯的鸟类。
+			</p>
+			<p>蓝点颏性情隐怯，常在地下作短距离奔驰，稍停，不时地扭动尾羽或将尾羽展开。喜欢潜匿于芦苇或矮灌丛下，飞行甚低，一般只作短距离飞翔。常欢快地跳跃，在地面奔走极快。平时鸣叫为单音，繁殖期发出嘹亮的优美歌声，也能仿效昆虫鸣声。
+			</p>
+		</div>
+	<div class="pet-s">
+			<img src="鹦鹉鱼.jpg" alt="鹦鹉鱼" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>鹦鹉鱼(价格：10-100元）</h4><br>
+			<p>鹦鹉鱼是一种色彩比较鲜艳的热带观赏鱼，鹦鹉鱼体形近似球形或卵圆形，嘴型酷似鹦鹉嘴型。鹦鹉鱼的品种比较多，最常见的是体色鲜红的血鹦鹉。鹦鹉鱼对环境的适应能力是比较强的，是易饲养的观赏鱼品种，深受大众的喜爱。
+			</p>
+			<p>　鹦鹦鹉鱼是生活在珊瑚礁中的热带鱼类。每当涨潮的时候，大大小小的鹦鹉鱼披着绿莹莹、黄灿灿的外衣，从珊瑚礁外的斜坡的深水中游到浅水礁坪和泻湖中。鹦鹉鱼有特殊的消化系统。鹦鹉鱼用它们板齿状的喙将珊瑚虫连同它们的骨骼一同啃下来，再用咽喉齿磨碎珊瑚虫，然后吞入腹中。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="龙鱼.jpg" alt="龙鱼" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>龙鱼(价格：50-190元）</h4><br>
+			<p>龙鱼，又叫做古舌鱼科，这种鱼类在东南亚地区可是非常受欢迎的。对于龙鱼，它对水质的要求颇高，最好的温度就是24-29摄氏度，饲养过程中，不要水温有剧烈的差异。龙鱼的种类不同，它的颜色也不一。身体上的鳞片会因为年龄的增长而变得更加亮、厚。
+			</p>
+			<p>　龙鱼性格凶猛，以小鱼、青蛙、昆虫为食，生活水温要高，尤其繁殖期间，需保持27-28℃，亲鱼将卵含在口中孵化。骨舌鱼科的鱼类属热带狭温性鱼类，生活在上层水域，对生存环境的水质要求很高。具有较强的攻击性及领域意识，人工饲养中应注意尽量避免同种混养。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="泽西长毛兔.jpg" alt="泽西长毛兔" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>泽西长毛兔(价格：200—300元）</h4><br>
+			<p>泽西长毛兔是一种体形比较娇小的宠物兔，它们的身躯比较短小圆润，身体上的体毛浓密柔滑，耳朵边上的毛发比较稀疏，是一种性格很温顺的兔子。
+			</p>
+			<p>饲养泽西长毛兔的环境要比较清爽、干燥的， 泽西长毛兔是很怕热的，它们在高温下是很容易中暑的，而且也比价容易引发一些疾病，饲主需要做好疾病的预防工作，干草是泽西长毛兔的主食。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="百灵鸟.jpg" alt="百灵鸟" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>百灵鸟(价格：100左右）</h4><br>
+			<p>百灵鸟的体形较小，羽毛颜色主要是以栗褐色为主，它们的眉纹长到枕部非常的有特点，胸部上有两个对称的黑色斑纹，是一种叫声非常清脆的观赏鸟。
+			</p>
+			<p>百灵成鸟饲料各地不同，有的喂谷、黍、苏子或苎麻等的种子，有的喂鸡用混合粉料搓熟鸡蛋。从营养、卫生、节约考虑，喂补充“添加剂”的鸡蛋小米较好，(换羽期)再经常喂些面粉虫、蝗虫、蚱蜢、叶菜等就能养得很好。
+			</p>
+		</div>
+		<h3 style="text-align: center">
+			<a href="#top">back to top（第6页）</a>
+		</h3>
+		<br>
+		<div class="con">
+			<h3>
+			<a href="宠物品种第五页.html">上一页</a>
+            <a href="宠物品种.html">1</a>
+            <a href="宠物品种第二页.html">2</a>
+            <a href="宠物品种第三页.html">3</a>
+            <a href="宠物品种第四页.html">4</a>
+			<a href="宠物品种第五页.html">5</a>
+			<a href="宠物品种第六页.html">6</a>
+			<a href="宠物品种第七页.html">7</a>
+           <a href="宠物品种第七页.html">下一页</a>
+			</h3>
+        </div>	
+    </div>
+  </div>	
+	<br>
+    <section class="footer">
+			  <h5>宠物之家有限公司  网址：www.pets.com 电话：0791111111 email：7******9@qq.com
+			  </h5>
+	 </section>		
+</body>
+</html>

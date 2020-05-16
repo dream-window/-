@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>自制宠粮</title>
+
+	<style>
+		<!--
+		     body{
+			/*背景图垂直且水平居中*/
+			background-position: center center;
+			/*当内容高度大于图片高度时，背景图像相对固定*/
+			background-attachment: fixed;
+			/*背景图不平铺*/
+			background-repeat: no-repeat;
+			/*让背景图基于容器大小收缩*/
+			background-size:cover;
+			width:100%;height:100%;
+		}
+/*
+			.first{width:100%;
+				margin:0;
+				background-color: #8BABE3;
+				padding: 20px
+		}
+			.second{width:100%;
+				background-color: #F0CCD6;
+				padding:10px;
+				text-align: center
+		}
+*/
+			.footer{ 
+				background-color:#059996;
+				color:white;
+				clear:both;
+				width:100%;
+				margin: auto;
+				text-align:center;
+				padding:5px;/* 内边距5像素 */
+			}
+			.add{
+				text-align: left; 
+				font-family: kaiti;
+				font-size: 25px;
+				padding-left:10px;
+				float: left;
+				width: 70%;
+				border: 0px;
+				/*border-sizing:border-box;*/
+				margin-right: 17px;
+				margin-bottom: 17px;
+				border-collapse: collapse;
+		}
+			.text1{background-color: #B1CCD5;
+				line-height: 35px;
+		}
+			.text2{background-color: #E0ADAE;
+				line-height: 35px;
+		}
+		
+			.ad{
+				text-align:center; 
+				font-family: kaiti;
+				padding-left:10px;
+				float: right;
+				width:20%;
+				border: 2px solid #E6B1B2;
+				/*border-sizing:border-box;*/
+				margin-right: 17px;
+				margin-bottom: 17px;
+				border-collapse: collapse;
+				background-color: #C9DB9F;
+			}
+			
+	/* 先重置一下html，消除HTML标签默认的内外边距 */
+		*{
+			padding: 0;
+			margin: 0;
+		}  
+        .wrap{
+			/* 对导航的内容设置一个主体为100%的宽并使其居中 */
+			width: 100%;
+			margin: 0 auto;
+		}   
+        .clear{
+			/* 清除浮动 */
+			clear: both;
+		} 
+        a{
+			color:black;
+			font-size:18px;
+			/* 去掉默认a标签的下划线 */
+			text-decoration-line:none;
+		}   
+		a:hover{
+			color:#F78181;
+		}
+	    ul,li{
+			list-style: none;
+		}
+        nav .level>li{
+			 float: left;
+			 width: 16.66%;
+			 text-align: center;
+			 background:#F0BFBF;
+			 padding: 15px 0;
+			 font-size: 16px;
+			 transition: .4s;
+		}
+        nav .level>li a{
+			color: black;
+		}
+        nav .level>li:hover{
+			/* 设置鼠标滑过后的样式 */
+			background:#FAF4F4;
+		}  
+        nav .two{
+			/* 先使二级菜单的内容隐藏 */
+			display: none;
+			margin-top: 10px;
+		}  
+        nav .level>li:hover .two{
+			/* 鼠标滑过一级菜单后的显示二级菜单 */
+			display: block;
+		}   
+        nav .two li{
+			padding: 5px 0;
+			transition: .4s;
+			cursor: pointer;
+		}
+        nav .two li:hover{
+			background:#F5ECD2;
+		}
+		nav .two li:hover a{
+			font-size:15px;
+		}
+		header{
+			/*标题*/
+		    padding: 30px;
+			margin:0 auto;
+			text-align: center;
+			background-color:#059996;
+			color:#FCF5F5 ;
+		}
+		-->
+	</style>
+</head>
+	
+<body background="img1.jpg">
+	<header>
+			  <h1>宠物之家</h1>
+		      <img src="logo.png" alt="宠物之家logo" title="宠物之家logo" width="110" height="80">
+   </header>
+   <nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="A首页.html" target="_blank">首页</a></li>
+                <li>
+                    <a href="宠物品种.html">宠物品种</a>
+                    <ul class="two">
+                        <li><a href="宠物品种.html">全部</a></li>
+                        <li><a href="宠物品种犬类.html">犬类</a></li>
+                        <li><a href="宠物品种猫科.html">猫科</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="喂养冷知识.html" target="_blank">喂养冷知识</a>
+                    <ul class="two">
+                        <li><a href="犬类冷知识.html" target="_blank">犬类</a></li>
+                        <li><a href="猫咪冷知识.html" target="_blank">喵咪</a></li>
+                        <li><a href="其他冷知识.html" target="_blank">其他</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="宠物故事主页面.html">萌宠趣闻</a>
+                    <ul class="two">
+                        <li><a href="宠物故事主页面.html" target="_blank">宠物故事</a></li>
+                        <li><a href="搞笑图片第一章.html" target="_blank">搞笑图片</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="救助热线.html">流浪动物</a>
+                    <ul class="two">
+                        <li><a href="救助热线.html" target="_blank">救助热线</a></li>
+                        <li><a href="联系我们.html" target="_blank">联系我们</a></li>
+                    </ul>
+                </li>
+                 <li><a href="自制宠粮.html" target="_blank">自制宠粮</a></li>
+            </ul>
+        </div>
+    </nav>
+	<hr>
+	<a href="top"></a>
+	<div style="width: 100%">
+		<div class="add">
+			<main style="padding-left: 0px">
+			<img src="img25.png" alt="宠物图片" style="float:left">
+			
+				<p style="color: #A9BADF;font-size: 45px">Part 1.自制宠粮有什么优点</p>
+				<p>无数事实证明，很多宠物粮是用很不健康的不能供人类食用的动物尸体制作的。</p>
+				<p>
+					所有的犬粮爱好者，都可以做一个简单的试验，称一下每天喂食的犬粮分量，然后，收集爱犬的排泄物，再称一下。90%的犬粮，犬类食用后，排泄出来的重量远超过犬粮的分量，而且恶臭，颜色多数是黑青色，不结实。爱犬为了消化犬粮内多余的废物，不得不大量喝水，大量排尿。
+				</p>
+				<p>
+					同样，换用自己制作的犬粮后，可以再测量一下同一组数字，会发现不仅粪便少，而且成团――掉到地上都邦邦的。爱犬喝水也很少。
+				</p>
+				<p>这些宠物粮既不营养又价格昂贵，出于对宠物宝贝的健康和自身经济考虑之下，自制宠粮自然而然就受到广大宠物主的追捧</p>
+			</main>
+			<hr>
+			<article>
+				<div class="text1">
+					<h3 style="color: #DBDD99">1号</h3>
+					<p>原料：冻猪大骨、冻鸭和鸡大胸各一斤、胡萝卜一斤半。一共15块左右~</p>
+					<p>
+						方法：解冻后剁成两CM左右的小块（大骨直接放下去就好，可以磨牙）,用开水焯一遍,将胡萝卜剁烂，加一些盐,放到电饭煲里,水淹过全部料高出三四公分左右,煲90分钟。非常鲜香,鸭骨都非常烂了，大骨上的肉也轻轻就剔开了,第二天冷确后，分成几份（看一次用多少而分份）放在冰箱速冻,每次要吃时，解冻加热至沸腾,将汤水一起拌上狗粮，比例依狗狗喜好而定~
+					</p>
+				</div>
+				<div class="text2">
+					<h3 style="color:#DBDD99">2号</h3>
+					<p>原料：玉米面2斤,白面1斤,牛肉或羊肉1斤(切碎),牛羊肉的油3两,胡萝卜三根,圆白菜半颗</p>
+					<p>方法：剁碎后一起搅拌,然后擀成厚约定3厘米的大饼,用手指在饼上戳十几个气孔，上锅蒸。每次吃的时候切成粒状就行了</p>
+				</div>
+				<div class="text1">
+					<h3 style="color: #DBDD99">3号</h3>
+					<p>
+						原料：大米约50g、大豆粉约25g（其实就是每天打豆浆后留下的副产品^o^）、鱼肉约100g（去大骨）、鸡蛋一个、动物肝脏约50g、薯类若干、菜蔬切碎若干，不加任何调料。 每天做一次就够一天的食量。
+					</p>
+					<p>
+						方法：吃的时候微波炉加热，再按1：1份量拌上狗粮和猫粮。 
+					</p>
+				</div>
+				<div class="text2">
+					<h3 style="color:#DBDD99">4号</h3>
+					<p>原料： 玉米面2斤 豆面1斤 牛肉馅5-8两 元白菜1个 胡萝卜2根 海带4两 牛奶一袋 鸡蛋一个 鸡粉少许 千万别加盐啊~ </p>
+					<p>
+						方法：首先用将鸡蛋打入豆面和玉米面中，搅拌一下，再将热牛奶倒入，继续搅拌再将所有的菜菜切碎,再将所有的菜菜切碎 把它们倒入事先调好的面中, 倒入少许橄榄油, 搅拌。。。。搅拌。。。。。放入蒸锅中蒸30分钟就OK了！
+					</p>
+				</div>
+				<div class="text1">
+					<h3 style="color: #DBDD99">5号</h3>
+					<p>
+						原料：糙玉米面，羊肉片（约占35%），少量鸡肝，少量食盐，少量南瓜，少量胡萝卜，少量复合维生素，少量复合矿物质，钙粉，花生油 
+					</p>
+					<p>
+						方法：玉米面加温水和匀，随便挤挤成饼状放入蒸屉（只要基本成型能容易蒸熟就好，别太厚了），水开后约10分钟左右取出掰开捏碎。鸡肝，羊肉片分别水煮熟，加少量盐，水不用太多，剩下的汤可拌入。南瓜切块蒸熟挤碎（约蒸10多分钟），胡萝卜切小丁用少量油快火炒过。把以上所有东东，再加上维生素，矿物质，钙粉，植物油，统统扔到一个大盆盆里，然后施展太极揉面手，把所有东东和匀。 剩下的工作，就是用勺子把自制狗粮盛进狗狗碗里，看着狗狗的吃相了，哦，吃之前别忘了让狗狗握手，趴下，等待，这可是最有效训练的时候。 
+					</p>
+				</div>
+			</article>
+		</div>
+		<div class="ad">
+			<aside>
+				<h1 style="color: #55BAF2">八大优质狗粮品牌</h1>
+				<br><br>
+				<img src="img26.png" alt="冠能logo" width="150px">
+				<p ><a href="https://baike.sogou.com/v7786151.htm?fromTitle=%E5%86%A0%E8%83%BD%E7%8B%97%E7%B2%AE">冠能</a></p>
+				<br><br>
+				<img src="img27.png" alt="皇家logo" width="150px">
+				<p><a href="https://baike.sogou.com/v7604171.htm?fromTitle=Royal+Canin">皇家</a></p>
+				<br><br>
+				<img src="img28.png" alt="宝路logo" width="150px">
+				<p><a href="https://baike.sogou.com/v8995673.htm?fromTitle=%E5%AE%9D%E8%B7%AF">宝路</a></p>
+				<br><br>
+				<img src="img29.png" alt="康多乐logo" width="150px">
+				<p><a href="https://www.purina.cn/index_brand_kdl.html">康多乐</a></p>
+				<br><br>
+				<img src="img30.jpg" alt="比瑞吉logo" width="150px">
+				<p><a href="https://weibo.com/bpet?refer_flag=1005050010_&is_all=1">比瑞吉</a></p>
+				<br><br>
+				<img src="img31.png" alt="好主人logo" width="150px">
+				<p><a href="https://www.phb123.com/pinpai/pp79175.html">好主人</a></p>
+				<br><br>
+				<img src="img32.png" alt="路斯logo" width="150px">
+				<p><a href="https://baike.sogou.com/v69413120.htm?fromTitle=%E8%B7%AF%E6%96%AF%E9%9B%B6%E9%A3%9F">路斯</a></p>
+				<br><br>
+				<img src="img33.png" alt="雷米高logo" width="150px">
+				<p>
+					<a href="https://baike.sogou.com/v7899557.htm?fromTitle=%E9%9B%B7%E7%B1%B3%E9%AB%98%E6%BE%B3%E5%AE%9D%E7%8A%AC%E7%B2%AE">雷米高</a>
+				</p>
+			</aside>
+		</div>
+		
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<h3 style="text-align: center">
+		<a href="#top">返回顶部（第1页）</a>
+	</h3>
+	<hr>
+	<div class="last">
+			
+			<a href="自制宠粮.html">上一页</a>
+			&nbsp;
+			<a href="自制宠粮.html">1</a>
+			&nbsp;
+			<a href="自制宠粮第二页.html">2</a>
+			&nbsp;
+			<a href="自制宠粮第三页.html">3</a>
+			&nbsp;
+			<a href="自制宠粮第二页.html">下一页</a>
+			
+    </div>	
+	
+	<br>
+    <section class="footer">
+		<h5>宠物之家有限公司  网址：www.pets.com 电话：0791111111 email：7******9@qq.com</h5>
+	</section>	
+</body>
+</html>

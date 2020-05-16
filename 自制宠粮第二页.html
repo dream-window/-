@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>自制宠粮</title>
+
+	<style>
+		<!--
+/*
+			.first{width:100%;
+				margin:0;
+				background-color: #8BABE3;
+				padding: 20px
+		}
+			.second{width:100%;
+				background-color: #F0CCD6;
+				padding:10px;
+				text-align: center
+		}
+*/
+			.footer{ 
+				background-color:#059996;
+				color:white;
+				clear:both;
+				width:100%;
+				margin: auto;
+				text-align:center;
+				padding:5px;/* 内边距5像素 */
+			}
+			.add{
+				text-align: left; 
+				font-family: kaiti;
+				font-size: 25px;
+				padding-left:10px;
+				float: left;
+				width: 70%;
+				height:100%;
+				border: 0px;
+				/*border-sizing:border-box;*/
+				margin-right: 17px;
+				margin-bottom: 17px;
+				border-collapse: collapse
+		}
+			.text1{background-color: #B1CCD5;
+				line-height: 35px
+		}
+			.text2{background-color: #E0ADAE;
+				line-height: 35px
+		}
+		
+			.ad{
+				text-align:center; 
+				font-family: kaiti;
+				
+				padding-left:10px;
+				float: right;
+				width:20%;
+				height:100%;
+				border: 2px solid #E6B1B2;
+				/*border-sizing:border-box;*/
+				margin-right: 17px;
+				margin-bottom: 17px;
+				border-collapse: collapse;
+				background-color: #C9DB9F
+			}
+			
+		/* 先重置一下html，消除HTML标签默认的内外边距 */
+		*{
+			padding: 0;
+			margin: 0;
+		}  
+        .wrap{
+			/* 对导航的内容设置一个主体为100%的宽并使其居中 */
+			width: 100%;
+			margin: 0 auto;
+		}   
+        .clear{
+			/* 清除浮动 */
+			clear: both;
+		} 
+        a{
+			color:black;
+			font-size:18px;
+			/* 去掉默认a标签的下划线 */
+			text-decoration-line:none;
+		}   
+		a:hover{
+			color:#F78181;
+		}
+	    ul,li{
+			list-style: none;
+		}
+        nav .level>li{
+			 float: left;
+			 width: 16.66%;
+			 text-align: center;
+			 background:#F0BFBF;
+			 padding: 15px 0;
+			 font-size: 16px;
+			 transition: .4s;
+		}
+        nav .level>li a{
+			color: black;
+		}
+        nav .level>li:hover{
+			/* 设置鼠标滑过后的样式 */
+			background:#FAF4F4;
+		}  
+        nav .two{
+			/* 先使二级菜单的内容隐藏 */
+			display: none;
+			margin-top: 10px;
+		}  
+        nav .level>li:hover .two{
+			/* 鼠标滑过一级菜单后的显示二级菜单 */
+			display: block;
+		}   
+        nav .two li{
+			padding: 5px 0;
+			transition: .4s;
+			cursor: pointer;
+		}
+        nav .two li:hover{
+			background:#F5ECD2;
+		}
+		nav .two li:hover a{
+			font-size:15px;
+		}
+		 body{
+			/*背景图垂直且水平居中*/
+			background-position: center center;
+			/*当内容高度大于图片高度时，背景图像相对固定*/
+			background-attachment: fixed;
+			/*背景图不平铺*/
+			background-repeat: no-repeat;
+			/*让背景图基于容器大小收缩*/
+			background-size:cover;
+			width:100%;height:100%;
+		}
+		header{
+			/*标题*/
+		    padding: 30px;
+			margin:0 auto;
+			text-align: center;
+			background-color:#059996;
+			color:#FCF5F5 ;
+		}
+			
+		-->
+	</style>
+</head>
+	
+<body background="img1.jpg">
+	<header>
+			  <h1>宠物之家</h1>
+		      <img src="logo.png" alt="宠物之家logo" title="宠物之家logo" width="110" height="80">
+   </header>
+   <nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="A首页.html" target="_blank">首页</a></li>
+                <li>
+                    <a href="宠物品种.html">宠物品种</a>
+                    <ul class="two">
+                        <li><a href="宠物品种.html">全部</a></li>
+                        <li><a href="宠物品种犬类.html">犬类</a></li>
+                        <li><a href="宠物品种猫科.html">猫科</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="喂养冷知识.html" target="_blank">喂养冷知识</a>
+                    <ul class="two">
+                        <li><a href="犬类冷知识.html" target="_blank">犬类</a></li>
+                        <li><a href="猫咪冷知识.html" target="_blank">喵咪</a></li>
+                        <li><a href="其他冷知识.html" target="_blank">其他</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="宠物故事主页面.html">萌宠趣闻</a>
+                    <ul class="two">
+                        <li><a href="宠物故事主页面.html" target="_blank">宠物故事</a></li>
+                        <li><a href="搞笑图片第一章.html" target="_blank">搞笑图片</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="救助热线.html">流浪动物</a>
+                    <ul class="two">
+                        <li><a href="救助热线.html" target="_blank">救助热线</a></li>
+                        <li><a href="联系我们.html" target="_blank">联系我们</a></li>
+                    </ul>
+                </li>
+                 <li><a href="自制宠粮.html" target="_blank">自制宠粮</a></li>
+            </ul>
+        </div>
+    </nav>
+	<hr>
+	<a href="top"></a>
+	<div style="width: 100%">
+		<div class="add">
+			<article>
+				<div class="text1">
+					<h3 style="color: #DBDD99">6号</h3>
+					<p>原料：猪肉，橄榄油,胡罗卜,白菇,番茄酱,高汤,蒜,糖,面粉</p>
+					<p>方法:
+						1.将猪肉切成一口大小,胡罗卜,白菇切片,蒜切细末;
+						2.锅中加入橄榄油少许,加蒜末爆香,加猪肉块,胡罗卜片,白菇片略炒;
+						3.锅中加入番茄酱适量,拌炒片刻倒入高汤,煮滚10分钟后加入糖少许;
+						4.面粉先与水调匀,倒入锅中搅拌均匀,转文火煮20分钟即可. 
+					</p>
+				</div>
+				<div class="text2">
+					<h3 style="color:#DBDD99">7号</h3>
+					<p>原料：鲜鸡肝500克、鸡蛋4个、玉米面1000克、面粉200克、食盐5克，可加小苏打少许。 </p>
+					<p>方法：1.先将鲜鸡肝打碎成末，鸡蛋打开拌匀，备用。2.将所需要的原料拌在一起，并用手搓拌片刻，最后将其放入锅中蒸半小时即可食用。</p>
+				</div>
+				<div class="text1">
+					<h3 style="color: #DBDD99">8号</h3>
+					<p>
+						原料：胡萝卜 胡萝卜粒 卷心菜 牛肉馅 猪肝 鸡蛋 盐 钙粉 狗粮
+					</p>
+					<p>方法：
+						1、胡萝卜有多碎切多碎
+						2、油爆锅，先炒胡萝卜粒，转小火盖上锅盖，等候熟透，其间可利用来切卷心菜
+						3、卷心菜切成人食用的长条状即可，纤维长一点还有助于促进肠道蠕动，清除宿便
+						4、切完卷心菜即可将牛肉馅下锅与胡萝卜汇合，转大火，加水两杯，铺上卷心茶，上锅盖
+						5、其间将猪肝切成细粒，四个鸡蛋搅匀，开锅后后放入鸡蛋和猪肝，加盐和钙粉，充分搅匀，重新开锅即可
+						6、以后使用可每次一大勺（带汁），微波炉加热，后与狗粮搅匀，狗粮膨胀，香气四溢，冷置后食用 
+					</p>
+				</div>
+				<div class="text2">
+					<h3 style="color:#DBDD99">9号</h3>
+					<p>原料：去骨鸡胸肉胡萝卜，玉米，二个鸡蛋加爱慕思狗粮一小杯～</p>
+					<p>
+						方法:
+							把鸡胸肉切成小丁，胡萝卜，玉米，狗粮分别打碎，鸡蛋打散。
+							先把鸡胸肉放入小锅煮熟，去沫，然后放入胡萝卜，玉米，煮5分钟左右，然后倒入打碎后的狗粮，煮1分钟左右
+							最后放入打散的鸡蛋，搅匀，稍微放一点盐。
+							再煮2分钟左右，煮成糊状就行了～
+					</p>
+				</div>
+				<div class="text1">
+					<h3 style="color: #DBDD99">10号</h3>
+					<p>
+						原料：鸡胸肉 芹菜 玉米面 健康油 西红柿 鸡蛋 牛奶 液体钙
+					</p>
+					<p>
+						方法：
+							1、鸡肉切块 芹菜切沫 西红柿切沫，玉米面加鸡蛋牛奶调成糊
+							2、水烧开加入鸡肉，和前面准备好的玉米面糊，水开起锅，食用前加入健康油
+					</p>
+				</div>
+				<div class="text2">
+					<h3 style="color:#DBDD99">11号</h3>
+					<p>原料：新鲜牛肉4斤，新鲜牛奶2升或奶粉1袋，包米面10斤，水泡过的大米2斤，豆油半斤（要杂熟的），胡萝卜，白菜，土豆各1斤 新鲜鸡干2斤，新鲜鸡蛋4斤，少量加些豆面 +面粉1KG，花生米（砸碎）500G （最好加些酵母，弄发面的比较好消化）</p>
+					<p>
+						方法:
+							一起搅和均匀用手制作成窝窝头状，上锅蒸熟，30分钟
+					</p>
+				</div>
+				<div class="text1">
+					<h3 style="color: #DBDD99">12号</h3>
+					<p>
+						原料：米饭500克、鸡肉200克、杂碎或鸡肝100克、青菜一棵、胡萝卜半根20克、食用盐3克、食用油20克。
+					</p>
+					<p>
+						方法：将所用的肉、菜洗干净，并切成小块。食用油烧开后，将切碎的鸡肉和杂碎倒入锅中拌炒一分钟，之后加水1000毫升一起煮烧。煮沸后往锅中加入备用好的米饭，并蒸煮3分钟。起锅前加菜末即可食用。 
+					</p>
+				</div>
+				<div class="text2">
+					<h3 style="color:#DBDD99">13号</h3>
+					<p>原料：无盐奶油80克、花生酱70克、糖粉100克、蛋1个、面粉170克。 </p>
+					<p>
+						方法:
+							将奶油于温室中软化，将糖、无盐奶油、花生酱混合打发后，加入蛋搅拌均匀，在加入面粉搓成面团，分成小球及压刃扁形，放置焗炉以170c焗10分钟。
+					</p>
+				</div>
+			</article>
+		</div>
+		<div class="ad">
+			<aside>
+				<h1 style="color: #55BAF2">八大优质狗粮品牌</h1>
+				<br><br>
+				<img src="img26.png" alt="冠能logo" width="150px">
+				<p ><a href="https://baike.sogou.com/v7786151.htm?fromTitle=%E5%86%A0%E8%83%BD%E7%8B%97%E7%B2%AE">冠能</a></p>
+				<br><br>
+				<img src="img27.png" alt="皇家logo" width="150px">
+				<p><a href="https://baike.sogou.com/v7604171.htm?fromTitle=Royal+Canin">皇家</a></p>
+				<br><br>
+				<img src="img28.png" alt="宝路logo" width="150px">
+				<p><a href="https://baike.sogou.com/v8995673.htm?fromTitle=%E5%AE%9D%E8%B7%AF">宝路</a></p>
+				<br><br>
+				<img src="img29.png" alt="康多乐logo" width="150px">
+				<p><a href="https://www.purina.cn/index_brand_kdl.html">康多乐</a></p>
+				<br><br>
+				<img src="img30.jpg" alt="比瑞吉logo" width="150px">
+				<p><a href="https://weibo.com/bpet?refer_flag=1005050010_&is_all=1">比瑞吉</a></p>
+				<br><br>
+				<img src="img31.png" alt="好主人logo" width="150px">
+				<p><a href="https://www.phb123.com/pinpai/pp79175.html">好主人</a></p>
+				<br><br>
+				<img src="img32.png" alt="路斯logo" width="150px">
+				<p><a href="https://baike.sogou.com/v69413120.htm?fromTitle=%E8%B7%AF%E6%96%AF%E9%9B%B6%E9%A3%9F">路斯</a></p>
+				<br><br>
+				<img src="img33.png" alt="雷米高logo" width="150px">
+				<p>
+					<a href="https://baike.sogou.com/v7899557.htm?fromTitle=%E9%9B%B7%E7%B1%B3%E9%AB%98%E6%BE%B3%E5%AE%9D%E7%8A%AC%E7%B2%AE">雷米高</a>
+				</p>
+			</aside>
+		</div>
+		
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<h3 style="text-align: center">
+		<a href="#top">返回顶部（第2页）</a>
+	</h3>
+	<hr>
+	<div class="last">
+			
+			<a href="自制宠粮.html">上一页</a>
+			&nbsp;
+			<a href="自制宠粮.html">1</a>
+			&nbsp;
+			<a href="自制宠粮第二页.html">2</a>
+			&nbsp;
+			<a href="自制宠粮第三页.html">3</a>
+			&nbsp;
+			<a href="自制宠粮第三页.html">下一页</a>
+			
+    </div>	
+	
+	<br>
+    <section class="footer">
+		<h5>宠物之家有限公司  网址：www.pets.com 电话：0791111111 email：7******9@qq.com</h5>
+	</section>	
+</body>
+</html>

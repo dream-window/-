@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>宠物品种</title>
+	<style>
+		<!--
+		  body{
+			/*背景图垂直且水平居中*/
+			background-position: center center;
+			/*当内容高度大于图片高度时，背景图像相对固定*/
+			background-attachment: fixed;
+			/*背景图不平铺*/
+			background-repeat: no-repeat;
+			/*让背景图基于容器大小收缩*/
+			background-size:cover;
+			width:100%;height:100%;
+		}
+		header{
+			/*标题*/
+		    padding: 30px;
+			margin:0 auto;
+			text-align: center;
+			background-color:#059996;
+			color:#FCF5F5 ;
+		}
+		h1{
+			/*标题字体加大*/
+			font-size: 40px;
+		}
+		/* 先重置一下html，消除HTML标签默认的内外边距 */
+		*{
+			padding: 0;
+			margin: 0;
+		}  
+        .wrap{
+			/* 对导航的内容设置一个主体为100%的宽并使其居中 */
+			width: 100%;
+			margin: 0 auto;
+		}   
+        .clear{
+			/* 清除浮动 */
+			clear: both;
+		} 
+        a{
+			color:black;
+			font-size:18px;
+			/* 去掉默认a标签的下划线 */
+			text-decoration-line: none;
+		} 
+		a:hover{
+			color:#F78181;
+		}
+	    ul,li{
+			list-style: none;
+		}
+         nav .level>li{
+			 float: left;
+			 width: 16.66%;
+			 text-align: center;
+			 background:#F0BFBF;
+			 padding: 15px 0;
+			 font-size: 16px;
+			 transition: .4s;
+		}
+        nav .level>li a{
+			color: black;
+		}
+        nav .level>li:hover{
+			/* 设置鼠标滑过后的样式 */
+			background:#FAF4F4;
+		}  
+        nav .two{
+			/* 先使二级菜单的内容隐藏 */
+			display: none;
+			margin-top: 10px;
+		}  
+        nav .level>li:hover .two{
+			/* 鼠标滑过一级菜单后的显示二级菜单 */
+			display: block;
+		}   
+        nav .two li{
+			padding: 5px 0;
+			transition: .4s;
+			cursor: pointer;
+		}
+        nav .two li:hover{
+			background:#F5ECD2;
+		}
+		nav .two li:hover a{
+			font-size:15px;
+		}
+		.main{
+			margin-top:35px;
+		}
+		.top-main{
+			margin: 0 auto;
+			width:75%;
+		}
+		.top-right{
+			float: right;
+		}
+		.pet-list {
+			margin:0 auto;
+            width:75%;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+		.pet-s {
+            width:47.6%;
+            overflow: hidden;
+			height:360px;
+            border:2px solid #F4C6C7;
+            text-align: center;
+            padding-top: 5px;
+            float: left;
+            margin-right: 17px;
+            margin-bottom: 17px;
+        }
+		p{
+			text-align:left;
+			text-indent:2em;
+			font-size:17px;
+			color:#050000;
+			line-height:1.6;
+		}
+		h4{
+			background-color:#F3F2D3;
+		}
+		.con{
+			text-align: center;
+		}
+        .con a{
+           /*转换为内联块 才可以增加a标签的大小*/
+           display: inline-block;
+           /*14 12*/
+           padding: 7px 10px;
+           font-size: 12px;
+           /*把行高设置和文字一样 方便计算a标签的高度*/
+           line-height: 12px;
+           color: #030000;
+           text-decoration: none;
+		   text-align: center;
+        } 
+        .con a:hover{
+           color:#F78181;
+        }
+		.footer {
+			background-color:#059996;
+		    color:white;
+		    clear:both;
+			margin: auto;
+		    text-align:center;
+		    padding:30px;/* 内边距5像素 */
+		}
+		-->
+	</style>
+	
+</head>
+
+<body background="背景图5.jpg">
+	<header>
+			  <h1>宠物之家</h1>
+		      <img src="logo.png" alt="宠物之家logo" title="宠物之家logo" width="110" height="80">
+   </header>
+ <nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="A首页.html" target="_blank">首页</a></li>
+                <li>
+                    <a href="宠物品种.html">宠物品种</a>
+                    <ul class="two">
+                        <li><a href="宠物品种.html">全部</a></li>
+                        <li><a href="宠物品种犬类.html">犬类</a></li>
+                        <li><a href="宠物品种猫科.html">猫科</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="喂养冷知识.html" target="_blank">喂养冷知识</a>
+                    <ul class="two">
+                        <li><a href="犬类冷知识.html" target="_blank">犬类</a></li>
+                        <li><a href="猫咪冷知识.html" target="_blank">喵咪</a></li>
+                        <li><a href="其他冷知识.html" target="_blank">其他</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="宠物故事主页面.html" target="_blank">萌宠趣闻</a>
+                    <ul class="two">
+                        <li><a href="宠物故事主页面.html" target="_blank">宠物故事</a></li>
+                        <li><a href="搞笑图片第一章.html" target="_blank">搞笑图片</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="救助热线.html" target="_blank">流浪动物</a>
+                    <ul class="two">
+                        <li><a href="救助热线.html" target="_blank">救助热线</a></li>
+                        <li><a href="联系我们.html" target="_blank">联系我们</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="自制宠粮.html" target="_blank">自制宠粮</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	<br>
+	<br>
+	<div class="main">
+		<div class="top-main">
+				<div class="top-right">
+					<p>
+						<a href="宠物品种.html">全部&nbsp;&nbsp;</a>
+					    <a href="宠物品种犬类.html">&nbsp;犬类&nbsp;&nbsp;</a>
+					    <a href="宠物品种猫科.html">&nbsp;猫科&nbsp;&nbsp;</a>
+					    <a href="宠物品种鸟类.html">&nbsp;鸟类&nbsp;&nbsp;</a>
+					    <a href="宠物品种啮齿类.html">&nbsp;啮齿类&nbsp;&nbsp;</a>
+					    <a href="宠物品种鱼类.html">鱼类</a>
+					</p>
+				</div>
+		</div>
+	<br>
+	<br>
+	<div class="pet-list">
+		<div class="pet-s">
+			<img src="小葵花凤头鹦鹉.jpg" alt="小葵花凤头鹦鹉" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>小葵花凤头鹦鹉(价格：6000元左右）</h4><br>
+			<p>小葵花凤头鹦鹉体色主要是以白色为主，头上顶着一个黄色的凤头冠羽，竖起头冠的时候呈扇状很像一朵葵花。野生的小葵花凤头鹦鹉主要是栖息在森林或者是林地中，它们主要是以各种种子、水果、植物嫩芽或者是昆虫为食。人工饲养的状态下最好是给它们提供一个较大的鸟笼，小葵花凤头鹦鹉的体型是较大的。
+			</p>
+			<p>华丽的羽冠，使它们成为鹦鹉中很特别的一族。小葵花凤头鹦鹉的羽冠展开时呈扇形，在不打开冠羽时，冠羽会在脑后形成一个微翘的“辫子”。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="绿翅金刚鹦鹉.jpg" alt="绿翅金刚鹦鹉" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>绿翅金刚鹦鹉(价格：2400～3100元）</h4><br>
+			<p>　绿翅金刚鹦鹉的羽色比较艳丽的，尾巴比较长，面部是没有羽毛的但是布满条纹，是一种寿命比较长的鹦鹉。野生绿翅金刚鹦鹉主要是进食各种的果实、种子以及花朵，它们的性格是比较友善的，能和其它种类的鹦鹉友好的相处。人工饲养的绿翅金刚鹦鹉注意给它们准备充足的食物，该鸟的食量是比较大的。
+			</p>
+			<p>一般金刚鹦鹉需要大量高脂肪、高热能的食物维持健康体能，最喜欢吃棕榈树的果实。主要食粮为多种类的果仁，种子，深绿色叶的蔬菜以保均衡营养。人工饲养可以喂食深绿色叶蔬菜和水果，面包及饼干等。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="蓝点颏.jpg" alt="蓝点颏" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>蓝点颏(价格：600元左右）</h4><br>
+			<p>　蓝点颏的体形是较小的，在颈部上有蓝色的羽毛，上体主要是呈土褐色，雌雄蓝点颏外形十分相似，很难区分性别。蓝点颏主要是在于灌丛或芦苇丛中活动，是一种习性比较隐怯的鸟类。
+			</p>
+			<p>蓝点颏性情隐怯，常在地下作短距离奔驰，稍停，不时地扭动尾羽或将尾羽展开。喜欢潜匿于芦苇或矮灌丛下，飞行甚低，一般只作短距离飞翔。常欢快地跳跃，在地面奔走极快。平时鸣叫为单音，繁殖期发出嘹亮的优美歌声，也能仿效昆虫鸣声。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="百灵鸟.jpg" alt="百灵鸟" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>百灵鸟(价格：100左右）</h4><br>
+			<p>百灵鸟的体形较小，羽毛颜色主要是以栗褐色为主，它们的眉纹长到枕部非常的有特点，胸部上有两个对称的黑色斑纹，是一种叫声非常清脆的观赏鸟。
+			</p>
+			<p>百灵成鸟饲料各地不同，有的喂谷、黍、苏子或苎麻等的种子，有的喂鸡用混合粉料搓熟鸡蛋。从营养、卫生、节约考虑，喂补充“添加剂”的鸡蛋小米较好，(换羽期)再经常喂些面粉虫、蝗虫、蚱蜢、叶菜等就能养得很好。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="鸡尾鹦鹉.jpg" alt="鸡尾鹦鹉" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>鸡尾鹦鹉(价格：50-200元）</h4><br>
+			<p>　　鸡尾鹦鹉属于凤头鹦鹉的一种，它的羽毛主要是灰色为主，身体下部分的羽毛颜色较浅，雌性鸡尾鹦鹉的翅膀下有一排黄色的小点，但雄性的是没有，这是区分它们性别的主要特征之一。
+			</p>
+			<p>野生鸡尾鹦鹉喜欢在地上找食吃，通常吃种子，草，树叶和树皮(来源于各类树木，灌木和其他植被)。此外， 野生的鸡尾鹦鹉还吃蛴螬和其他不同的昆虫。　　人工饲养的幼鸟十分活泼，喜爱亲近主人。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="雨伞凤头鹦鹉.jpg" alt="雨伞凤头鹦鹉" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>雨伞凤头鹦鹉(价格：7000元左右）</h4><br>
+			<p>　雨伞凤头鹦鹉的体色主要是以白色为主，它们与一般的鹦鹉在外形上是有很多相似的地方，不过该鸟的冠羽在凤头鹦鹉中属于最大的，雨伞凤头鹦鹉头顶上的羽冠张开的时候与雨伞很相像。
+			</p>
+			<p>　笼养的白凤头鹦鹉有时非常吵杂，喜爱啃咬东西，啃咬力十分强劲，刚引进饲养时较害羞，能很快地适应新环境。如果进行人工饲养，主人必须要准备一个较大的鸟笼，因为雨伞凤头鹦鹉可不是个小块头。
+			</p>
+		</div>
+	
+		<h3 style="text-align: center">
+			<a href="#top">back to top（第1页）</a>
+		</h3>
+		<br>
+		<div class="con">
+			<h3>
+			<a href="宠物品种鸟类.html">上一页</a>
+            <a href="宠物品种鸟类.html">1</a>
+           <a href="宠物品种鸟类.html">下一页</a>
+			</h3>
+        </div>	
+    </div>
+  </div>	
+	<br>
+    <section class="footer">
+			  <h5>宠物之家有限公司  网址：www.pets.com 电话：0791111111 email：7******9@qq.com
+			  </h5>
+	 </section>		
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>其他冷知识</title>
+	<style>
+		<!--
+		 body{
+			/*背景图垂直且水平居中*/
+			background-position: center center;
+			/*当内容高度大于图片高度时，背景图像相对固定*/
+			background-attachment: fixed;
+			/*背景图不平铺*/
+			background-repeat: no-repeat;
+			/*让背景图基于容器大小收缩*/
+			background-size:cover;
+			width:100%;height:100%;
+		}
+		header{
+			/*标题*/
+		    padding: 30px;
+			margin:0 auto;
+			text-align: center;
+			background-color:#059996;
+			color:#FCF5F5 ;
+		}
+		h1{
+			/*标题字体加大*/
+			font-size: 40px;
+		} 
+		/* 先重置一下html，消除HTML标签默认的内外边距 */
+		*{
+			padding: 0;
+			margin: 0;
+		}  
+        .wrap{
+			/* 对导航的内容设置一个主体为100%的宽并使其居中 */
+			width: 100%;
+			margin: 0 auto;
+		}   
+        .clear{
+			/* 清除浮动 */
+			clear: both;
+		} 
+        a{
+			color:black;
+			font-size:18px;
+			/* 去掉默认a标签的下划线 */
+			text-decoration-line:none;
+		}   
+		a:hover{
+			color:#F78181;
+		}
+	    ul,li{
+			list-style: none;
+		}
+        nav .level>li{
+			 float: left;
+			 width: 16.66%;
+			 text-align: center;
+			 background:#F0BFBF;
+			 padding: 15px 0;
+			 font-size: 16px;
+			 transition: .4s;
+		}
+        nav .level>li a{
+			color: black;
+		}
+        nav .level>li:hover{
+			/* 设置鼠标滑过后的样式 */
+			background:#FAF4F4;
+		}  
+        nav .two{
+			/* 先使二级菜单的内容隐藏 */
+			display: none;
+			margin-top: 10px;
+		}  
+        nav .level>li:hover .two{
+			/* 鼠标滑过一级菜单后的显示二级菜单 */
+			display: block;
+		}   
+        nav .two li{
+			padding: 5px 0;
+			transition: .4s;
+			cursor: pointer;
+		}
+        nav .two li:hover{
+			background:#F5ECD2;
+		}
+		nav .two li:hover a{
+			font-size:15px;
+		}
+		.body{
+			font-family:KaiTi;
+			margin:0;
+		}
+		.main{
+			margin:0 auto;
+			width:75%;
+			margin-top:70px;
+		}
+		.top-main{
+			margin: 0 auto;
+			width:100%;
+		}
+		.top-right{
+			float: right;
+		}
+		h2{
+			color:#F2B16A;
+			text-align:center;
+			margin-bottom: 25px;
+		}
+		h3{
+			text-align: center;
+		}
+		section{
+			background-color:rgba(243,240,240,0.7);
+			margin-bottom: 15px;
+			margin-top:15px;
+		}
+		img{
+			margin-left:27%;
+			margin-right:25%;
+			margin-bottom:20px;
+			margin-top: 35px;
+		}
+		p{
+			font-size:18px;
+			text-indent:2em;
+			line-height:2;
+			color:#059996;
+			margin-left:100px;
+			margin-right:100px;
+		}
+		.footer {
+			background-color:#059996;
+		    color:white;
+		    clear:both;
+			margin: auto;
+		    text-align:center;
+		    padding:30px;/* 内边距5像素 */
+		}
+	  -->
+	</style>
+</head>
+
+<body background="背景图5.jpg">
+	<header>
+			  <h1>宠物之家</h1>
+		      <img src="logo.png" alt="宠物之家logo" title="宠物之家logo" width="110" height="80">
+   </header>
+	  <nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="A首页.html" target="_blank">首页</a></li>
+                <li>
+                    <a href="宠物品种.html" target="_blank">宠物品种</a>
+                    <ul class="two">
+                         <li><a href="宠物品种.html" target="_blank">全部</a></li>
+                         <li><a href="宠物品种犬类.html" target="_blank">犬类</a></li>
+						<li><a href="宠物品种猫科.html" target="_blank">猫科</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="喂养冷知识.html">喂养冷知识</a>
+                    <ul class="two">
+                        <li><a href="犬类冷知识.html">犬类</a></li>
+                        <li><a href="猫咪冷知识.html">猫咪</a></li>
+                        <li><a href="其他冷知识.html">其他</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="宠物故事主页面.html" target="_blank">萌宠趣闻</a>
+                    <ul class="two">
+                        <li><a href="宠物故事主页面.html" target="_blank">宠物故事</a></li>
+                        <li><a href="搞笑图片第一章.html" target="_blank">搞笑图片</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="救助热线.html" target="_blank">流浪动物</a>
+                    <ul class="two">
+                        <li><a href="救助热线.html" target="_blank">救助热线</a></li>
+                        <li><a href="联系我们.html" target="_blank">联系我们</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="自制宠粮.html" target="_blank">自制宠粮</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	    <div class="main">
+		    <div class="top-main">
+				<div class="top-right">
+					<p id="top">
+						<a href="犬类冷知识.html">犬类&nbsp;&nbsp;</a>
+					    <a href="猫咪冷知识.html">&nbsp;猫科&nbsp;&nbsp;</a>
+					    <a href="其他冷知识.html">&nbsp;其他&nbsp;&nbsp;</a>
+					</p>
+				</div>
+			<br>
+			<br>
+				<section>
+			       <img src="鸟类睡眠.jpg" alt="鸟类睡眠" width="500">
+			       <h2>鸟类睡眠</h2>
+					<p>鸟类的睡眠方式：<b>鸟类有节奏的睁眼，是鸟类睡觉的特征。</b></p>
+					<p>鸟类睡眠的姿势有区别。大多数鸟喜欢<b>卧着睡觉</b>，但有一些鸟喜欢用一只脚或两只脚<b>站立着睡觉</b>。反嘴鹬、针尾鸭、绿头鸭和另一些鸟睡觉时把嘴插在温暖的肩羽下，白鹳、鸬鹚及许多猛禽的睡觉姿势是把嘴放在背上或将头垂在胸羽里.</p>
+					<p>大多数鸟<b>1天大约睡8小时</b>，有些鸟差不多要睡1天，而另一些鸟几乎一点觉也不用睡。斑头秋沙鸭每天要睡十三四个小时，而鸥椋鸟每天安排自己睡觉的时间还不足1小时。</p><br>
+				</section>
+				<hr>
+				<section>
+					<img src="鱼类喝水.jpg" alt="鱼类喝水" width="500">
+					<h2>鱼类喝水</h2>
+					<p><b>淡水鱼是一辈子都不喝水</b>的，因为渗透压的关系，水份会不断从身体表面进入体内，淡水鱼一张一合嘴是为了把身体里的水份排出去，不然可能会被不断涌入的水活活撑死</p>
+					<p>但是海水鱼不一样，海水的渗透压远远高于鱼体内的渗透压，会把鱼体内的水份吸走，所以<b>海水鱼是需要喝水</b>的，需要维持身体内外水平衡，而且海鱼还会将吸入的海水中的盐分排出，避免自己盐过量而中毒。</p><br>
+				</section>
+				<hr>
+				<section>
+					<img src="龙猫有寄生虫吗.JPEG" alt="龙猫" width="500">
+					<h2>龙猫有寄生虫吗？</h2>
+					<p>我们称为龙猫的这一种猫（误），其实就是<b>毛丝鼠，又叫栗鼠、绒鼠</b>。</p>
+					<p>毛丝鼠，顾名思义，它的毛真的丝般光滑，而且非常绒，柔软程度绝对在地球上数一数二，一抱难忘！。</p>
+					<p>而且毛很密实，它的每个毛孔里长着 60-80 根毛，所以<b>不会生跳蚤之类的寄生虫</b>，因为虫子根本接触不到它的皮肤。所以宠物主不要过于担心自家鼠身上有寄生虫哦！</p>
+					<br>
+				</section>
+		</div>
+	</div>
+	<h3>
+		<a href="#top">back to top</a>
+	</h3>
+	<br>
+	  <section class="footer">
+			  <h5>宠物之家有限公司  网址：www.pets.com 电话：0791111111 email：7******9@qq.com
+			  </h5>
+	 </section>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>宠物品种</title>
+	<style>
+		<!--
+		  body{
+			/*背景图垂直且水平居中*/
+			background-position: center center;
+			/*当内容高度大于图片高度时，背景图像相对固定*/
+			background-attachment: fixed;
+			/*背景图不平铺*/
+			background-repeat: no-repeat;
+			/*让背景图基于容器大小收缩*/
+			background-size:cover;
+			width:100%;height:100%;
+		}
+		header{
+			/*标题*/
+		    padding: 30px;
+			margin:0 auto;
+			text-align: center;
+			background-color:#059996;
+			color:#FCF5F5 ;
+		}
+		h1{
+			/*标题字体加大*/
+			font-size: 40px;
+		}
+		/* 先重置一下html，消除HTML标签默认的内外边距 */
+		*{
+			padding: 0;
+			margin: 0;
+		}  
+        .wrap{
+			/* 对导航的内容设置一个主体为100%的宽并使其居中 */
+			width: 100%;
+			margin: 0 auto;
+		}   
+        .clear{
+			/* 清除浮动 */
+			clear: both;
+		} 
+        a{
+			color:black;
+			font-size:18px;
+			/* 去掉默认a标签的下划线 */
+			text-decoration-line: none;
+		} 
+		a:hover{
+			color:#F78181;
+		}
+	    ul,li{
+			list-style: none;
+		}
+         nav .level>li{
+			 float: left;
+			 width: 16.66%;
+			 text-align: center;
+			 background:#F0BFBF;
+			 padding: 15px 0;
+			 font-size: 16px;
+			 transition: .4s;
+		}
+        nav .level>li a{
+			color: black;
+		}
+        nav .level>li:hover{
+			/* 设置鼠标滑过后的样式 */
+			background:#FAF4F4;
+		}  
+        nav .two{
+			/* 先使二级菜单的内容隐藏 */
+			display: none;
+			margin-top: 10px;
+		}  
+        nav .level>li:hover .two{
+			/* 鼠标滑过一级菜单后的显示二级菜单 */
+			display: block;
+		}   
+        nav .two li{
+			padding: 5px 0;
+			transition: .4s;
+			cursor: pointer;
+		}
+        nav .two li:hover{
+			background:#F5ECD2;
+		}
+		nav .two li:hover a{
+			font-size:15px;
+		}
+		.main{
+			margin-top:35px;
+		}
+		.top-main{
+			margin: 0 auto;
+			width:75%;
+		}
+		.top-right{
+			float: right;
+		}
+		.pet-list {
+			margin:0 auto;
+            width:75%;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+		.pet-s {
+            width:47.6%;
+            overflow: hidden;
+			height:360px;
+            border:2px solid #F4C6C7;
+            text-align: center;
+            padding-top: 5px;
+            float: left;
+            margin-right: 17px;
+            margin-bottom: 17px;
+        }
+		p{
+			text-align:left;
+			text-indent:2em;
+			font-size:17px;
+			color:#050000;
+			line-height:1.6;
+		}
+		h4{
+			background-color:#F3F2D3;
+		}
+		.con{
+			text-align: center;
+		}
+        .con a{
+           /*转换为内联块 才可以增加a标签的大小*/
+           display: inline-block;
+           /*14 12*/
+           padding: 7px 10px;
+           font-size: 12px;
+           /*把行高设置和文字一样 方便计算a标签的高度*/
+           line-height: 12px;
+           color: #030000;
+           text-decoration: none;
+		   text-align: center;
+        } 
+        .con a:hover{
+           color:#F78181;
+        }
+		.footer {
+			background-color:#059996;
+		    color:white;
+		    clear:both;
+			margin: auto;
+		    text-align:center;
+		    padding:30px;/* 内边距5像素 */
+		}
+		-->
+	</style>
+	
+</head>
+
+<body background="背景图5.jpg">
+	<header>
+			  <h1>宠物之家</h1>
+		      <img src="logo.png" alt="宠物之家logo" title="宠物之家logo" width="110" height="80">
+   </header>
+ <nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="A首页.html" target="_blank">首页</a></li>
+                <li>
+                    <a href="宠物品种.html">宠物品种</a>
+                    <ul class="two">
+                        <li><a href="宠物品种.html">全部</a></li>
+                        <li><a href="宠物品种犬类.html">犬类</a></li>
+                        <li><a href="宠物品种猫科.html">猫科</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="喂养冷知识.html" target="_blank">喂养冷知识</a>
+                    <ul class="two">
+                        <li><a href="犬类冷知识.html" target="_blank">犬类</a></li>
+                        <li><a href="猫咪冷知识.html" target="_blank">喵咪</a></li>
+                        <li><a href="其他冷知识.html" target="_blank">其他</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="宠物故事主页面.html" target="_blank">萌宠趣闻</a>
+                    <ul class="two">
+                        <li><a href="宠物故事主页面.html" target="_blank">宠物故事</a></li>
+                        <li><a href="搞笑图片第一章.html" target="_blank">搞笑图片</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="救助热线.html" target="_blank">流浪动物</a>
+                    <ul class="two">
+                        <li><a href="救助热线.html" target="_blank">救助热线</a></li>
+                        <li><a href="联系我们.html" target="_blank">联系我们</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="自制宠粮.html" target="_blank">自制宠粮</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	<br>
+	<br>
+	<div class="main">
+		<div class="top-main">
+				<div class="top-right">
+					<p>
+						<a href="宠物品种.html">全部&nbsp;&nbsp;</a>
+					    <a href="宠物品种犬类.html">&nbsp;犬类&nbsp;&nbsp;</a>
+					    <a href="宠物品种猫科.html">&nbsp;猫科&nbsp;&nbsp;</a>
+					    <a href="宠物品种鸟类.html">&nbsp;鸟类&nbsp;&nbsp;</a>
+					    <a href="宠物品种啮齿类.html">&nbsp;啮齿类&nbsp;&nbsp;</a>
+					    <a href="宠物品种鱼类.html">鱼类</a>
+					</p>
+				</div>
+		</div>
+	<br>
+	<br>
+	<div class="pet-list">
+		<div class="pet-s">
+			<img src="泰迪.jpg" alt="泰迪" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>泰迪(价格：1000-2000元）</h4><br>
+			<p>泰迪犬其实是贵宾犬的一种美容方式。贵宾是法国品种，一度被用作猎水鸟，19世纪和20世纪该品种达到其发展的顶峰，用作打猎、表演和陪伴。根据体型大小被分为四类，最受欢迎的是体型较小的品种：迷你贵宾犬和玩具贵宾犬。其中玩具贵宾犬是体型最小的一种。贵宾犬不脱毛，是极好的宠物犬。。
+			</p>
+			<p>贵宾犬聪明，活泼而且性情优良，极易与人亲近，是一种忠实的犬种。行动也非常敏捷，聪明而优雅，正方形结构、比例匀称，步伐有力而自信，拥有非凡的气质和独特的尊严，有时可能还有一点倔强，而且泰迪犬“多才多艺”是比较容易训练的一个犬种。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="秋田犬.jpg" alt="秋田犬" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>秋田犬(价格：3000-5000元）</h4><br>
+			<p>秋田犬是日本国犬，它的祖先，被称呼为山地狩猎犬。本来在日本犬里大型犬是不存在的，秋田犬是中型的熊猎犬。除了协助猎熊外，它还被利用来捕鹿和野猪。秋田的被毛为双层毛，底毛厚实、柔软、浓密且比披毛略短。披毛直、粗硬且竖立在身体上。被毛相对的比较容易打理。
+			</p>
+			<p>秋田犬对于主人十分忠实，《忠犬八公》这部电影对其良好的品质做出了很好地诠释，而很多人也正是通过这部电影对秋田产生了好感，让它在宠物界中占有了一席之地。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="贵宾犬.jpg" alt="贵宾犬" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>贵宾犬(价格：1000-2000元）</h4><br>
+			<p>贵宾犬也称“贵妇犬”，属于非常聪明且喜欢狩猎的犬种，据猜测贵妇犬起源于德国，在那儿它以水中捕猎犬而著称。贵宾犬分为标准犬、迷你犬、玩具犬三种。它们之间的区别只是在于体型的大小不同。许多年以来，它一直被认为是法国的国犬。
+			</p>
+			<p>此犬多才多艺，在任何环境都能表现出高贵的举止。由其醒目的外形，忠诚的服务，积极的性格，使其拥有许多犬迷。贵宾犬性质聪明，活泼，性情优良，极易近人，是一种忠实的犬种。贵宾犬是很活跃、机警而且行动优雅的犬种，拥有很好的身体比例和矫健的动作，显示出一种自信的姿态。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="柯基犬.jpg" alt="柯基犬" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>柯基犬(价格：2000-6000元）</h4><br>
+			<p>柯基犬即威尔士柯基犬。威尔士柯基犬共分两种：卡迪根威尔士柯基犬和彭布罗克威尔士柯基犬。两者比较，彭布罗克柯基犬的体形较短，腿骨更直、更轻，而威尔士柯基犬背毛的质地更好；但在性情上，彭布罗克柯基犬显得不安分，容易激动，没有卡迪根威尔士柯基犬那么驯服。
+			</p>
+			<p>天生喜欢与儿童作伴的狗狗莫属瑞典柯基犬啦，性格温和，热爱运动，讨厌的是此犬喜欢吠叫，因此需要从小对他进行训练。他的身形与腊肠犬非常相似，短腿，长身子。走起路来晃悠悠的。瑞典柯基犬聪明、有活力容易喂养，精力充沛，无所畏惧，适合家养的宠物。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="边境牧羊犬.jpg" alt="边境牧羊犬" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>边境牧羊犬(价格：1500-3000元）</h4><br>
+			<p>边境牧羊犬（Border Collie）原产于苏格兰边境，为柯利牧羊犬之一种，具强烈的牧羊本能，天性聪颖、善于察言观色，能确实明白主人的指示，可藉由眼神的注视而驱动羊群移动或旋转，被当成牧羊犬已有多年的历史。
+			</p>
+			<p>其最大的特点即是聪明、学习能力强、理解力高、容易训练、温和、忠诚、顺从，其忠心程度可以用如影随形来形容。 全称：边境柯利牧羊犬。在苏格兰边境，又名博德牧羊犬，此犬种被当成牧羊犬已有多年的历史，直到1915年，才正式以“边境牧羊犬”来命名。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="阿富汗猎犬.jpg" alt="阿富汗猎犬" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>阿富汗猎犬(价格：2000-3000元）</h4><br>
+			<p>阿富汗猎犬是一种贵族犬，是现存的最古老的猎犬犬种之一，它外貌高贵，态度超然，没有任何平凡或粗糙的痕迹。此犬种以其厚实、细腻、柔滑的被毛和在末端带有卷曲的尾巴而明显区别于其他犬种。在伊朗东部和阿富汗寒冷的山的特殊环境下，使它们获得这些独特的外观特点。
+			</p>
+			<p>　性格沉稳，不容易动怒。内敛、矜持是阿富汗猎犬的性格特点，你不理它的时候它不会主动理你。对待生人，它一般都很傲慢，但因为性情温顺，它不会轻易攻击人。性格活泼好动，需要大量的运动，所以每天要进行一定量的户外活动
+			</p>
+		</div>
+		<h3 style="text-align: center">
+			<a href="#top">back to top（第2页）</a>
+		</h3>
+		<br>
+		<div class="con">
+			<h3>
+			<a href="宠物品种犬类.html">上一页</a>
+            <a href="宠物品种犬类.html">1</a>
+            <a href="宠物品种犬类第二页.html">2</a>
+           <a href="宠物品种犬类第二页.html">下一页</a>
+			</h3>
+        </div>	
+    </div>
+  </div>	
+	<br>
+    <section class="footer">
+			  <h5>宠物之家有限公司  网址：www.pets.com 电话：0791111111 email：7******9@qq.com
+			  </h5>
+	 </section>		
+</body>
+</html>

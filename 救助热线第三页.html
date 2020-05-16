@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>救助热线</title>
+
+	<style>
+		<!--
+		     body{
+			/*背景图垂直且水平居中*/
+			background-position: center center;
+			/*当内容高度大于图片高度时，背景图像相对固定*/
+			background-attachment: fixed;
+			/*背景图不平铺*/
+			background-repeat: no-repeat;
+			/*让背景图基于容器大小收缩*/
+			background-size:cover;
+			width:100%;height:100%;
+		}
+			a{
+				text-decoration: none;
+				color:#494F37;
+				font-size:20px
+		}
+			/*后面的编写中记得设计字体颜色，大小这些，不用系统自带*/
+/*
+			.first ul li{
+				float:left;
+				list-style: none;
+				width:110px
+		}
+			.first{
+				width:100%;
+				margin:0;
+				background-color: #8BABE3;
+				padding: 20px
+		}
+			.second{
+				width:100%;
+				background-color: #F0CCD6;
+				padding:10px;
+				text-align: center
+		}
+*/
+			.end{
+				background-color:#AFE7E8;
+				width:100%;
+				height:30px;
+				text-align: center;
+				line-height:30px; 
+				font-family: kaiti
+		}
+			.text{
+				margin-bottom: 15px;
+				color: #C2EBBA;
+				letter-spacing: 10px;
+				text-align: center;
+		}
+			.all{
+				width:75%;
+				margin:0 auto
+		}
+			.add{
+				text-align: center; 
+				font-family: kaiti;
+				padding-left:10px;
+				float: left;
+				width: 47.5%;
+				height:380px;
+				border: 2px solid #E6B1B2;
+				/*border-sizing:border-box;*/
+				margin-right: 17px;
+				margin-bottom: 17px;
+				border-collapse: collapse
+		}
+			.ad{
+				text-align:center; 
+				font-family: kaiti;
+				padding-left:10px;
+				float: right;
+				width:47.5%;
+				height:380px;
+				border: 2px solid #E6B1B2;
+				/*border-sizing:border-box;*/
+				margin-right: 17px;
+				margin-bottom: 17px;
+				border-collapse: collapse
+			}
+			
+			.last{
+				text-align: left;
+
+			}
+			.footer{ 
+				background-color:#059996;
+				color:white;
+				clear:both;
+				width:100%;
+				margin: auto;
+				text-align:center;
+				padding:5px;/* 内边距5像素 */
+			}
+		td{border:2px solid #5E4C4C;
+			float: left;
+			width: 50%;
+			height: 25px
+		}
+		/* 先重置一下html，消除HTML标签默认的内外边距 */
+		*{
+			padding: 0;
+			margin: 0;
+		}  
+        .wrap{
+			/* 对导航的内容设置一个主体为100%的宽并使其居中 */
+			width: 100%;
+			margin: 0 auto;
+		}   
+        .clear{
+			/* 清除浮动 */
+			clear: both;
+		} 
+        a{
+			color:black;
+			font-size:18px;
+			/* 去掉默认a标签的下划线 */
+			text-decoration-line:none;
+		}   
+		a:hover{
+			color:#F78181;
+		}
+	    ul,li{
+			list-style: none;
+		}
+        nav .level>li{
+			 float: left;
+			 width: 16.66%;
+			 text-align: center;
+			 background:#F0BFBF;
+			 padding: 15px 0;
+			 font-size: 16px;
+			 transition: .4s;
+		}
+        nav .level>li a{
+			color: black;
+		}
+        nav .level>li:hover{
+			/* 设置鼠标滑过后的样式 */
+			background:#FAF4F4;
+		}  
+        nav .two{
+			/* 先使二级菜单的内容隐藏 */
+			display: none;
+			margin-top: 10px;
+		}  
+        nav .level>li:hover .two{
+			/* 鼠标滑过一级菜单后的显示二级菜单 */
+			display: block;
+		}   
+        nav .two li{
+			padding: 5px 0;
+			transition: .4s;
+			cursor: pointer;
+		}
+        nav .two li:hover{
+			background:#F5ECD2;
+		}
+		nav .two li:hover a{
+			font-size:15px;
+		}
+		header{
+			/*标题*/
+		    padding: 30px;
+			margin:0 auto;
+			text-align: center;
+			background-color:#059996;
+			color:#FCF5F5 ;
+		}
+		.contre{
+			text-align: center;
+			float:left;
+			width:100%;
+		}
+		-->
+	</style>
+</head>
+	
+<body background="img1.jpg">
+	<header>
+			  <h1>宠物之家</h1>
+		      <img src="logo.png" alt="宠物之家logo" title="宠物之家logo" width="110" height="80">
+   </header>
+   <nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="A首页.html" target="_blank">首页</a></li>
+                <li>
+                    <a href="宠物品种.html">宠物品种</a>
+                    <ul class="two">
+                        <li><a href="宠物品种.html">全部</a></li>
+                        <li><a href="宠物品种犬类.html">犬类</a></li>
+                        <li><a href="宠物品种猫科.html">猫科</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="喂养冷知识.html" target="_blank">喂养冷知识</a>
+                    <ul class="two">
+                        <li><a href="犬类冷知识.html" target="_blank">犬类</a></li>
+                        <li><a href="猫咪冷知识.html" target="_blank">喵咪</a></li>
+                        <li><a href="其他冷知识.html" target="_blank">其他</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="宠物故事主页面.html">萌宠趣闻</a>
+                    <ul class="two">
+                        <li><a href="宠物故事主页面.html" target="_blank">宠物故事</a></li>
+                        <li><a href="搞笑图片第一章.html" target="_blank">搞笑图片</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="救助热线.html">流浪动物</a>
+                    <ul class="two">
+                        <li><a href="救助热线.html" target="_blank">救助热线</a></li>
+                        <li><a href="联系我们.html" target="_blank">联系我们</a></li>
+                    </ul>
+                </li>
+               
+               			 <li><a href="自制宠粮.html" target="_blank">自制宠粮</a></li>
+                    
+            </ul>
+        </div>
+    </nav>
+	<hr>
+	<br><br><br><br><br><br>
+	<h1 class="text">国内部分小动物救助中心</h1>
+	<div class="all">
+		<div class="add">
+			<br>
+			<a href="https://weibo.com/u/3914447284?refer_flag=1005050010_&is_all=1" target="blank">
+				<img src="img18.png" alt="成都动物保护中心logo" width:50%;height:200px></a>
+			<br><br><br>
+			<p>
+				<b><a href="https://weibo.com/u/3914447284?refer_flag=1005050010_&is_all=1" target="blank">成都动物保护中心</a></b>
+				<br><br>
+			</p>
+			电话：028-82618361
+		</div>
+		<div class="ad">
+			<br>
+			<a href="http://www.s-pia.org/home/index.html"><img src="img19.png" alt="山东省宠物行业协会logo" width="540" width:50%;height:30px></a>
+			<br><br><br><br>
+			<p>
+				<b>
+					<a href="http://www.s-pia.org/home/index.html" target="blank">山东省宠物行业协会 </a>
+				</b>
+				<br><br>
+				
+			</p>
+			电话：15314259570
+		</div>
+		<div class="add">
+			<br><br>
+			<a href="https://weibo.com/u/5184048047?from=feed&loc=at&nick=%E6%97%A0%E9%94%A1%E5%B8%82%E5%B0%8F%E5%8A%A8%E7%89%A9%E4%BF%9D%E6%8A%A4%E6%81%8A%E4%BC%9A&is_all=1" target="blank"><img src="img20.png" alt="无锡市小动物保护协会logo" width:30%;height:50px></a>
+			<br><br><br><br>
+			<p>
+				<b><a href="https://weibo.com/u/5184048047?from=feed&loc=at&nick=%E6%97%A0%E9%94%A1%E5%B8%82%E5%B0%8F%E5%8A%A8%E7%89%A9%E4%BF%9D%E6%8A%A4%E6%81%8A%E4%BC%9A&is_all=1" target="blank">无锡市小动物保护协会</a></b>
+				
+			</p>
+			电话：18015343313
+			
+		</div>
+		<div class="ad">
+			<br>
+			<a href="https://weibo.com/u/2713252317?refer_flag=1005050010_&is_all=1" target="blank">
+				<img src="img21.png" alt="株洲市小动物保护协会logo" width:50%;height:30px>
+			</a>
+			<br>
+			<p>
+				<b>
+					<a href="https://weibo.com/u/2713252317?refer_flag=1005050010_&is_all=1https://weibo.com/u/2713252317?refer_flag=1005050010_&is_all=1" target="blank">株洲市小动物保护协会</a>
+				</b>
+				<br><br>
+				
+			</p>
+			电话：400-8286-855
+		</div>
+		<div class="add">
+			<br><br>
+			<a href="https://weibo.com/u/1606820101?nick=%E5%B9%BF%E5%B7%9E%E5%8A%A8%E7%89%A9%E4%BF%9D%E6%8A%A4%E5%8D%8F%E4%BC%9A&is_all=1" target="blank">
+				<img src="img22.png" alt="广州动物保护协会logo" width:50%;height:200px>
+			</a>
+			<br><br><br>
+			<p>
+				<b><a href="https://baike.sogou.com/v76341622.htm?fromTitle=%E6%B9%96%E5%8D%97%E5%B0%8F%E5%8A%A8%E7%89%A9%E4%BF%9D%E6%8A%A4%E5%8D%8F%E4%BC%9A" target="blank">广州动物保护协会</a></b>
+				<br><br>
+			</p>
+			电话：15905612626
+		</div>
+		<div class="ad">
+			<br>
+			<a href="https://weibo.com/u/6570042083?refer_flag=1005050010_&is_all=1" target="blank">
+				<img src="img23.png" alt="秦皇岛市保护小动物协会logo" width:50%;height:30px>
+			</a>
+			<br><br>
+			<p>
+				<b>
+					<a href="https://weibo.com/u/6570042083?refer_flag=1005050010_&is_all=1" target="blank">秦皇岛市保护小动物协会</a>
+				</b>
+				
+			</p>
+			电话：1383355****
+		</div>
+		<div class="add">
+			<br><br>
+			<a href="https://weibo.com/cwqy527?loc=at&nick=%E4%B8%AD%E5%9B%BD%E5%B0%8F%E5%8A%A8%E7%89%A9%E4%BF%9D%E6%8A%A4%E5%BF%97%E6%84%BF%E8%80%85&is_all=1" target="blank">
+				<img src="img24.png" alt="中国小动物保护志愿者logo" width:50%;height:200px>
+			</a><br><br>
+			<p>
+				<b><a href="https://weibo.com/cwqy527?loc=at&nick=%E4%B8%AD%E5%9B%BD%E5%B0%8F%E5%8A%A8%E7%89%A9%E4%BF%9D%E6%8A%A4%E5%BF%97%E6%84%BF%E8%80%85&is_all=1" target="blank">中国小动物保护志愿者</a></b>
+				<br><br>
+			</p>
+			电话：0898-66188277
+		</div>
+		<div class="ad">
+			<br><br><br><br>
+			<p>更多联系方式还在更新寻找中......
+				<br><br>
+				敬请期待
+				<br><br><br><br>
+				mail to us:
+				<a href="mailto:2524090916@qq.com">2524090916@qq.com</a>
+				
+				
+			</p>
+		</div>
+	</div>
+	<div class="contre">
+        <hr>
+		<h3 style="text-align: center">
+			<a href="#top">back to top（第3页）</a>
+		</h3>
+		<hr>
+		<div class="last">
+			
+			<a href="救助热线第二页.html">上一页</a>
+			&nbsp;
+			<a href="救助热线.html">1</a>
+			&nbsp;
+			<a href="救助热线第二页.html">2</a>
+			&nbsp;
+			<a href="救助热线第三页.html">3</a>
+			&nbsp;
+			<a href="救助热线第三页.html">下一页</a>
+			
+        </div>
+	</div>
+	<br>
+    <section class="footer">
+			  <h5>宠物之家有限公司  网址：www.pets.com 电话：0791111111 email：7******9@qq.com</h5>
+	 </section>		
+	
+</body>
+</html>

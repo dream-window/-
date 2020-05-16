@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>宠物品种</title>
+	<style>
+		<!--
+		  body{
+			/*背景图垂直且水平居中*/
+			background-position: center center;
+			/*当内容高度大于图片高度时，背景图像相对固定*/
+			background-attachment: fixed;
+			/*背景图不平铺*/
+			background-repeat: no-repeat;
+			/*让背景图基于容器大小收缩*/
+			background-size:cover;
+			width:100%;height:100%;
+		}
+		header{
+			/*标题*/
+		    padding: 30px;
+			margin:0 auto;
+			text-align: center;
+			background-color:#059996;
+			color:#FCF5F5 ;
+		}
+		h1{
+			/*标题字体加大*/
+			font-size: 40px;
+		}
+		/* 先重置一下html，消除HTML标签默认的内外边距 */
+		*{
+			padding: 0;
+			margin: 0;
+		}  
+        .wrap{
+			/* 对导航的内容设置一个主体为100%的宽并使其居中 */
+			width: 100%;
+			margin: 0 auto;
+		}   
+        .clear{
+			/* 清除浮动 */
+			clear: both;
+		} 
+        a{
+			color:black;
+			font-size:18px;
+			/* 去掉默认a标签的下划线 */
+			text-decoration-line: none;
+		} 
+		a:hover{
+			color:#F78181;
+		}
+	    ul,li{
+			list-style: none;
+		}
+         nav .level>li{
+			 float: left;
+			 width: 16.66%;
+			 text-align: center;
+			 background:#F0BFBF;
+			 padding: 15px 0;
+			 font-size: 16px;
+			 transition: .4s;
+		}
+        nav .level>li a{
+			color: black;
+		}
+        nav .level>li:hover{
+			/* 设置鼠标滑过后的样式 */
+			background:#FAF4F4;
+		}  
+        nav .two{
+			/* 先使二级菜单的内容隐藏 */
+			display: none;
+			margin-top: 10px;
+		}  
+        nav .level>li:hover .two{
+			/* 鼠标滑过一级菜单后的显示二级菜单 */
+			display: block;
+		}   
+        nav .two li{
+			padding: 5px 0;
+			transition: .4s;
+			cursor: pointer;
+		}
+        nav .two li:hover{
+			background:#F5ECD2;
+		}
+		nav .two li:hover a{
+			font-size:15px;
+		}
+		.main{
+			margin-top:35px;
+		}
+		.top-main{
+			margin: 0 auto;
+			width:75%;
+		}
+		.top-right{
+			float: right;
+		}
+		.pet-list {
+			margin:0 auto;
+            width:75%;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+		.pet-s {
+            width:47.6%;
+            overflow: hidden;
+			height:360px;
+            border:2px solid #F4C6C7;
+            text-align: center;
+            padding-top: 5px;
+            float: left;
+            margin-right: 17px;
+            margin-bottom: 17px;
+        }
+		p{
+			text-align:left;
+			text-indent:2em;
+			font-size:17px;
+			color:#050000;
+			line-height:1.6;
+		}
+		h4{
+			background-color:#F3F2D3;
+		}
+		.con{
+			text-align: center;
+		}
+        .con a{
+           /*转换为内联块 才可以增加a标签的大小*/
+           display: inline-block;
+           /*14 12*/
+           padding: 7px 10px;
+           font-size: 12px;
+           /*把行高设置和文字一样 方便计算a标签的高度*/
+           line-height: 12px;
+           color: #030000;
+           text-decoration: none;
+		   text-align: center;
+        } 
+        .con a:hover{
+           color:#F78181;
+        }
+		.footer {
+			background-color:#059996;
+		    color:white;
+		    clear:both;
+			margin: auto;
+		    text-align:center;
+		    padding:30px;/* 内边距5像素 */
+		}
+		-->
+	</style>
+	
+</head>
+
+<body background="背景图5.jpg">
+	<header>
+			  <h1>宠物之家</h1>
+		      <img src="logo.png" alt="宠物之家logo" title="宠物之家logo" width="110" height="80">
+   </header>
+ <nav>
+        <div class="wrap">
+            <ul class="level">
+                <li><a href="A首页.html" target="_blank">首页</a></li>
+                <li>
+                    <a href="宠物品种.html">宠物品种</a>
+                    <ul class="two">
+                        <li><a href="宠物品种.html">全部</a></li>
+                        <li><a href="宠物品种犬类.html">犬类</a></li>
+                        <li><a href="宠物品种猫科.html">猫科</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="喂养冷知识.html" target="_blank">喂养冷知识</a>
+                    <ul class="two">
+                        <li><a href="犬类冷知识.html" target="_blank">犬类</a></li>
+                        <li><a href="猫咪冷知识.html" target="_blank">喵咪</a></li>
+                        <li><a href="其他冷知识.html" target="_blank">其他</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="宠物故事主页面.html" target="_blank">萌宠趣闻</a>
+                    <ul class="two">
+                        <li><a href="宠物故事主页面.html" target="_blank">宠物故事</a></li>
+                        <li><a href="搞笑图片第一章.html" target="_blank">搞笑图片</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="救助热线.html" target="_blank">流浪动物</a>
+                    <ul class="two">
+                        <li><a href="救助热线.html" target="_blank">救助热线</a></li>
+                        <li><a href="联系我们.html" target="_blank">联系我们</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="自制宠粮.html" target="_blank">自制宠粮</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	<br>
+	<br>
+	<div class="main">
+		<div class="top-main">
+				<div class="top-right">
+					<p>
+						<a href="宠物品种.html">全部&nbsp;&nbsp;</a>
+					    <a href="宠物品种犬类.html">&nbsp;犬类&nbsp;&nbsp;</a>
+					    <a href="宠物品种猫科.html">&nbsp;猫科&nbsp;&nbsp;</a>
+					    <a href="宠物品种鸟类.html">&nbsp;鸟类&nbsp;&nbsp;</a>
+					    <a href="宠物品种啮齿类.html">&nbsp;啮齿类&nbsp;&nbsp;</a>
+					    <a href="宠物品种鱼类.html">鱼类</a>
+					</p>
+				</div>
+		</div>
+	<br>
+	<br>
+	<div class="pet-list">
+		<div class="pet-s">
+			<img src="美国短毛猫.jpg" alt="美国短毛猫" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>美国短毛猫(价格：2000-7000）</h4><br>
+			<p>美国短毛猫（American Shorthair）是原产美国的一种猫，其祖先为欧洲早期移民带到北美的猫种，与英国短毛猫和欧洲短毛猫同类。该品种的猫是在街头巷尾收集来的猫当中选种、并和进口品种如英国短毛猫、缅甸猫和波斯猫杂交培育而成。
+			</p>
+			<p>美国短毛猫素以体格魁伟，骨胳粗壮，肌肉发达，生性聪明，性格温顺而著称，是短毛猫类中大型品种。被毛厚密，毛色多达30余种，其中银色条纹品种尤为名贵。美国短毛猫外貌憨厚可爱，性格也很乖巧，同人性、重感情。只要在平时饲养的时候对它温柔有爱，它会对饲养主人的一家都非常亲近。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="哈士奇.jpg" alt="哈士奇" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>哈士奇(价格：1500-5000）</h4><br>
+			<p>西伯利亚雪撬犬是一种原产于西伯利亚东部的工作犬，常见别名哈士奇。西伯利亚雪撬犬体重介于16~27kg之间，身高大约51~60cm，是一种中型犬。由于有着能在北极严寒环境中繁衍生息的能力，西伯利亚雪撬犬是一种适应力很强的犬种。
+			</p>
+			<p>它们最早是用于狩猎驯鹿，拖曳雪橇或者照顾幼儿使孩子们远离寒冷。哈士奇的肠胃功能比较独特,对蛋白质和脂肪的要求比较高,所以建议饲喂幼犬粮到18个月龄以后才改喂成犬狗粮。哈士奇的个性很活泼温顺，几乎不会出现主动攻击人类的现象。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="拉布拉多.jpg" alt="拉布拉多" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>拉布拉多(价格：1500-4000）</h4><br>
+			<p>主要产地是加拿大东南方的纽芬兰岛西岸及东南岸沿海。拉布拉多猎犬是一种中大型犬类。其个性温和、活泼，没有攻击性且智能高，是适合被选作导盲犬或其他工作犬的狗品种，跟哈士奇和金毛寻回猎犬并列三大无攻击性犬类。
+			</p>
+			<p>　拉布拉多猎犬的被毛与众不同。被毛短、直且非常浓密，触摸时，给手指一种相当坚硬的感觉。拉布拉多猎犬有黑色、黄色和巧克力色、米白色四种颜色。其他任何颜色或颜色组合都属于失格。胸部有小的白色斑块是允许的，但不理想。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="挪威森林猫.jpg" alt="挪威森林猫" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>挪威森林猫(价格：8000以上）</h4><br>
+			<p>挪威森林猫外观与缅因猫相似，与西伯利亚森林猫同列。森林猫生长的环境非常寒冷和恶劣，因此它长有比其它猫更厚密的被毛和强壮的体格。挪威森林猫体大肢壮，奔跑速度极快，不怕日晒雨淋，行走时颈毛和尾毛飘逸，非常美丽。
+			</p>
+			<p>　挪威森林猫性格内向，好动活泼，勇敢，差不多是唯一一种猫从高处，面向地面俯冲而下，毫无惧色。，独立性强，聪颖敏捷，机灵警觉，行动谨慎，喜欢冒险和活动，且能抓善捕，善爬树攀岩，有“能干的狩猎者”之美誉。因而不适宜长期饲养在室内，最好饲养在有庭院和环境比较宽敞的家庭。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="吉娃娃.jpg" alt="吉娃娃" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>吉娃娃(价格：1000-2000）</h4><br>
+			<p>吉娃娃以匀称的体格和娇小的体型广受人们的喜爱，属小型犬种，优雅、警惕、动作迅速，是世界上最小的犬种之一。谈及小型玩赏犬令人们第一时刻想到的应该就属吉娃娃犬，此犬体型虽小，但遇事十分勇敢，同时具备大型犬的狩猎与防范本能。
+			</p>
+			<p>　吉娃娃性格比较敏感，多疑，对主人忠心耿耿、依赖性强，勇敢聪明、好奇心重。有坚韧的意志，优雅，警惕，动作迅速，以匀称的体格和娇小的体型广受人们的喜爱主人极有独占心。吉娃娃颇畏寒，不宜养于室外犬舍，冬天外出需加外衣御寒。吉娃娃身材小，对生活空间的要求不高。
+			</p>
+		</div>
+		<div class="pet-s">
+			<img src="柯基犬.jpg" alt="柯基犬" title="图片来源于爱宠网" width="167" height="212" style="float:left" hspace="5" vspace="5">
+			<h4>柯基犬(价格：2000-6000元）</h4><br>
+			<p>柯基犬即威尔士柯基犬。威尔士柯基犬共分两种：卡迪根威尔士柯基犬和彭布罗克威尔士柯基犬。两者比较，彭布罗克柯基犬的体形较短，腿骨更直、更轻，而威尔士柯基犬背毛的质地更好；但在性情上，彭布罗克柯基犬显得不安分，容易激动，没有卡迪根威尔士柯基犬那么驯服。
+			</p>
+			<p>天生喜欢与儿童作伴的狗狗莫属瑞典柯基犬啦，性格温和，热爱运动，讨厌的是此犬喜欢吠叫，因此需要从小对他进行训练。他的身形与腊肠犬非常相似，短腿，长身子。走起路来晃悠悠的。瑞典柯基犬聪明、有活力容易喂养，精力充沛，无所畏惧，适合家养的宠物。
+			</p>
+		</div>
+		<h3 style="text-align: center">
+			<a href="#top">back to top（第2页）</a>
+		</h3>
+		<br>
+		<div class="con">
+			<h3>
+			<a href="宠物品种.html">上一页</a>
+            <a href="宠物品种.html">1</a>
+            <a href="宠物品种第二页.html">2</a>
+            <a href="宠物品种第三页.html">3</a>
+            <a href="宠物品种第四页.html">4</a>
+			<a href="宠物品种第五页.html">5</a>
+			<a href="宠物品种第六页.html">6</a>
+			<a href="宠物品种第七页.html">7</a>
+           <a href="宠物品种第三页.html">下一页</a>
+			</h3>
+        </div>	
+    </div>
+  </div>	
+	<br>
+    <section class="footer">
+			  <h5>宠物之家有限公司  网址：www.pets.com 电话：0791111111 email：7******9@qq.com
+			  </h5>
+	 </section>		
+</body>
+</html>
